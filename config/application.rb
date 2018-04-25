@@ -26,5 +26,6 @@ module HomeLeasing
     config.action_dispatch.default_headers = {
       "X-Frame-Options" => "ALLOWALL"
     }
+    config.serve_static_assets = true
   end
 end
