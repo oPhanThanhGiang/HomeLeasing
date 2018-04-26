@@ -16,8 +16,7 @@ module HomeLeasing
     # -- all .rb files in that directory are automatically loaded.
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}")]
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :ja
-    config.i18n.locale = :ja
+    config.i18n.default_locale = :en
     config.autoload_paths += ["#{config.root}/app/validators/", Rails.root.join("lib")]
     config.assets.enabled = true
     config.secret_key_base = YAML.load(File.open("#{Rails.root}/config/secrets.yml"))[Rails.env]["secret_key_base"]
