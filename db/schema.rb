@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180426130821) do
+ActiveRecord::Schema.define(version: 20180427174019) do
 
   create_table "m_cities", force: :cascade do |t|
     t.string "name"
@@ -130,6 +130,7 @@ ActiveRecord::Schema.define(version: 20180426130821) do
     t.string "security_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
     t.index ["city_id"], name: "index_news_on_city_id"
     t.index ["direction_of_balcony_id"], name: "index_news_on_direction_of_balcony_id"
     t.index ["direction_of_house_id"], name: "index_news_on_direction_of_house_id"
@@ -140,6 +141,7 @@ ActiveRecord::Schema.define(version: 20180426130821) do
     t.index ["type_of_land_id"], name: "index_news_on_type_of_land_id"
     t.index ["type_of_new_id"], name: "index_news_on_type_of_new_id"
     t.index ["unit_id"], name: "index_news_on_unit_id"
+    t.index ["user_id"], name: "index_news_on_user_id"
     t.index ["ward_id"], name: "index_news_on_ward_id"
   end
 
