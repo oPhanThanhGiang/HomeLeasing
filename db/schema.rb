@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427174019) do
+ActiveRecord::Schema.define(version: 20180505075922) do
+
+  create_table "images", force: :cascade do |t|
+    t.string "imageablem_type"
+    t.integer "imageablem_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["imageablem_type", "imageablem_id"], name: "index_images_on_imageablem_type_and_imageablem_id"
+  end
 
   create_table "m_cities", force: :cascade do |t|
     t.string "name"
@@ -45,6 +53,14 @@ ActiveRecord::Schema.define(version: 20180427174019) do
   end
 
   create_table "m_interiors", force: :cascade do |t|
+    t.string "name"
+    t.string "key_name"
+    t.integer "sort"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "m_paper_types", force: :cascade do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -143,6 +159,18 @@ ActiveRecord::Schema.define(version: 20180427174019) do
     t.index ["unit_id"], name: "index_news_on_unit_id"
     t.index ["user_id"], name: "index_news_on_user_id"
     t.index ["ward_id"], name: "index_news_on_ward_id"
+  end
+
+  create_table "news_papers", force: :cascade do |t|
+    t.text "title"
+    t.integer "user_id"
+    t.integer "m_paper_type_id"
+    t.text "content"
+    t.integer "sort"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["m_paper_type_id"], name: "index_news_papers_on_m_paper_type_id"
+    t.index ["user_id"], name: "index_news_papers_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
