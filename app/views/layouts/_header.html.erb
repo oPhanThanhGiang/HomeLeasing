@@ -8,41 +8,49 @@
    <!-- Nav -->
    <nav id="nav">
       <ul>
-         <li class="current"><a href="index.html">Home</a></li>
-         <li>
-            <a href="#">Dropdown</a>
-            <ul>
-               <li><a href="#">Lorem ipsum</a></li>
-               <li><a href="#">Magna veroeros</a></li>
-               <li><a href="#">Etiam nisl</a></li>
-               <li>
-                  <a href="#">Sed consequat</a>
-                  <ul>
-                     <li><a href="#">Lorem dolor</a></li>
-                     <li><a href="#">Amet consequat</a></li>
-                     <li><a href="#">Magna phasellus</a></li>
-                     <li><a href="#">Etiam nisl</a></li>
-                     <li><a href="#">Sed feugiat</a></li>
-                  </ul>
-               </li>
-               <li><a href="#">Nisl tempus</a></li>
-            </ul>
-         </li>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Lorem ipsum</a></li>
+            <li><a href="#">Magna veroeros</a></li>
+            <li><a href="#">Etiam nisl</a></li>
+            <li>
+              <a href="#">Sed consequat</a>
+              <ul>
+                <li><a href="#">Lorem dolor</a></li>
+                <li><a href="#">Amet consequat</a></li>
+                <li><a href="#">Magna phasellus</a></li>
+                <li><a href="#">Etiam nisl</a></li>
+                <li><a href="#">Sed feugiat</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Nisl tempus</a></li>
+          </ul>
+        </li>
          <li><a href="left-sidebar.html">Left Sidebar</a></li>
          <li><a href="right-sidebar.html">Right Sidebar</a></li>
-         <li>
-           <%= link_to "Dang Nhap", new_user_session_path %>
-         </li>
-         <li>
-            <% if user_signed_in? %>
-              <%= link_to "Thoat", destroy_user_session_path, method: :delete, id: "destroy_user" %>
-              <%= button_to "Thoat", destroy_user_session_path, method: :delete, style: "display: none;", id: "button_destroy" %>
-            <% end %>
-         </li>
+          <% unless user_signed_in? %>
+            <li>
+              <%= link_to "Dang Nhap", new_user_session_path %>
+            </li>
+          <% end %>
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to "My pages", "#" %>
+              <ul>
+                <li>
+                  <%= link_to "Informations", destroy_user_session_path, id: "information-mypage" %>
+                  <%= link_to "Logout", destroy_user_session_path, method: :delete, id: "destroy_user" %>
+                </li>
+              </ul>
+            </li>
+          <% end %>
       </ul>
    </nav>
   </div>
 </div>
+<%= button_to "Thoat", destroy_user_session_path, method: :delete, style: "display: none;", id: "button_destroy" %>
 <script type="text/javascript">
   $("#destroy_user").click(function(event){
     event.preventDefault();
