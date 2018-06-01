@@ -15,9 +15,3 @@
 //= require rails-ujs
 //= require turbolinks
 //= require jquery.dropotron.min
-//= require skel.min
-//= require skel-viewport.min
-//= require main
-//= require util
-//= require ie/html5shiv
-//= require ie/respond.min

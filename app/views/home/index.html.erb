@@ -1,1645 +1,1363 @@
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['Form1'];
-if (!theForm) {
-    theForm = document.Form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-        <!-- Header -->
-        
-<div id="wr_header" class="header">
-    
-
-<div class="header-register" id="headerregister">
-    <div class="action">
-        
-        
-        <div class="logon">
-            <a href="javascript:" rel="nofollow" title="Đăng nhập" id="ButtonLogin" class="fancybox.ajax">
-                <span>Đăng nhập</span>
-            </a>
-        </div>
-        <div class="register">
-            <a href="javascript:" rel="nofollow" title="Đăng ký" id="ButtonRegister" class="fancybox.ajax">
-                <span>Đăng ký</span>
-            </a>
-        </div>
-
-        
-    </div>
-</div>
-<script src="/Scripts/BoxUser.js" type="text/javascript"></script>
-
-    <div class="header-logo">
-        <div class="hdcontent">
-            <div class="content-logo">
-                <a href="/" title="Đô thị">
-                <%= image_tag "Images/logo.png", alt: "Đô thị" %>
-                </a>
-            </div>
-            
-        <div class="MultiBanner72 content-banner" id="Banner_72" style="">
-            <a id="ban_l72" href="/banner-click-72.htm?url=https://file.dothi.net/KM/nhanh-tay-dang-tin-tha-ga-nhan-qua.html" rel="nofollow" target="_blank" style="width: 100px">
-                <%= image_tag "https://img.dothi.net/2018/05/25/20180525082640-246b.gif", alt: "Banner top - CT Đăng tin tặng tin" %>
-            </a>
-        </div>
-    
-
-            
-        </div>
-    </div>
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var activePage = $('.nav-menu .active a').attr('href');
-        if (activePage == '/thiet-ke-kien-truc.htm' || activePage == '/khong-gian-song.htm' || activePage == '/phong-thuy.htm') {
-            $('.content-banner').hide();
-            $('.MultiBanner3').show();
-        }
-        else {
-            $('.MultiBanner3').remove();
-        }
-    })
-</script>
-
-        <!-- End Header -->
-        <!-- Me nú -->
-        
-<div class="menu">
-    <div class="menu-content">
-        <ul class="nav-menu">
-            <li class="lv0 active">
-                <a href="/" title="Trang chủ">Trang chủ
-                </a>
-            </li>
-            <li class="lv0">
-                <h3><a href="/nha-dat-ban.htm" title="BĐS bán">BĐS bán</a></h3>
-                <ul class="dropdown-menu">
-                    <li><h4><a href="/ban-can-ho-chung-cu.htm" title="Bán căn hộ chung cư">Bán căn hộ chung cư</a></h4></li>
-                    <li><h4><a href="/ban-nha-dat.htm" title="Tất cả các loại nhà bán">Tất cả các loại nhà bán</a></h4></li>
-                    <li><h4><a href="/ban-nha-rieng.htm" title="Bán nhà riêng">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bán nhà riêng</a></h4></li>
-                    <li><h4><a href="/ban-nha-biet-thu-lien-ke.htm" title="Bán nhà biệt thự, liền kề">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bán nhà biệt thự, liền kề</a></h4></li>
-                    <li><h4><a href="/ban-nha-mat-pho.htm" title="Bán nhà mặt phố">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bán nhà mặt phố</a></h4></li>
-                    <li><h4><a href="/ban-dat-dat-nen.htm" title="Tất cả các loại đất bán">Tất cả các loại đất bán</a></h4></li>
-                    <li><h4><a href="/ban-dat-nen-du-an.htm" title="Bán đất nền dự án">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bán đất nền dự án</a></h4></li>
-                    <li><h4><a href="/ban-dat.htm" title="Bán đất">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bán đất</a></h4></li>
-                    <li><h4><a href="/ban-trang-trai-khu-nghi-duong.htm" title="Bán trang trại, khu nghỉ dưỡng">Bán trang trại, khu nghỉ dưỡng</a></h4></li>
-                    <li><h4><a href="/ban-kho-nha-xuong.htm" title="Bán kho, nhà xưởng">Bán kho, nhà xưởng</a></h4></li>
-                    <li><h4><a href="/ban-loai-bat-dong-san-khac.htm" title="Bán loại bất động sản khác">Bán loại bất động sản khác</a></h4></li>
-                </ul>
-            </li>
-            <li class="lv0">
-                <h3><a href="/nha-dat-cho-thue.htm" title="BĐS cho thuê">BĐS cho thuê</a></h3>
-                <ul class="dropdown-menu">
-                    <li><h4><a href="/cho-thue-can-ho-chung-cu.htm" title="Cho thuê căn hộ chung cư">Cho thuê căn hộ chung cư</a></h4></li>
-                    <li><h4><a href="/cho-thue-nha-rieng.htm" title="Cho thuê nhà riêng">Cho thuê nhà riêng</a></h4></li>
-                    <li><h4><a href="/cho-thue-nha-mat-pho.htm" title="Cho thuê nhà mặt phố">Cho thuê nhà mặt phố</a></h4></li>
-                    <li><h4><a href="/cho-thue-nha-tro-phong-tro.htm" title="Cho thuê nhà trọ, phòng trọ">Cho thuê nhà trọ, phòng trọ</a></h4></li>
-                    <li><h4><a href="/cho-thue-van-phong.htm" title="Cho thuê văn phòng">Cho thuê văn phòng</a></h4></li>
-                    <li><h4><a href="/cho-thue-cua-hang-ki-ot.htm" title="Cho thuê cửa hàng, ki ốt">Cho thuê cửa hàng, ki ốt</a></h4></li>
-                    <li><h4><a href="/cho-thue-kho-nha-xuong-dat.htm" title="Cho thuê kho, nhà xưởng, đất">Cho thuê kho, nhà xưởng, đất</a></h4></li>
-                    <li><h4><a href="/cho-thue-loai-bat-dong-san-khac.htm" title="Cho thuê loại bất động sản khác">Cho thuê loại bất động sản khác</a></h4></li>
-                </ul>
-            </li>
-            <li class="lv0"><h3><a href="/tin-tuc.htm" title="Thông tin thị trường">Thông tin thị trường</a></h3><ul class="dropdown-menu"><li><h4><a href="/tin-thi-truong.htm" title="Tin thị trường">Tin thị trường</a></h4></li><li><h4><a href="/chinh-sach-quy-hoach.htm" title="Chính sách - Quy Hoạch">Chính sách - Quy Hoạch</a></h4></li><li><h4><a href="/tin-du-an.htm" title="Tin dự án">Tin dự án</a></h4></li><li><h4><a href="/bds-the-gioi.htm" title="BĐS Thế giới">BĐS Thế giới</a></h4></li><li><h4><a href="/thi-truong-vat-lieu-xay-dung.htm" title="Thị trường vật liệu xây dựng ">Thị trường vật liệu xây dựng </a></h4></li></ul></li><li class="lv0"><h3><a href="/thiet-ke-kien-truc.htm" title="Thiết kế kiến trúc">Thiết kế kiến trúc</a></h3><ul class="dropdown-menu"><li><h4><a href="/tu-van-thiet-ke.htm" title="Tư vấn thiết kế
-">Tư vấn thiết kế
-</a></h4></li><li><h4><a href="/kinh-nghiem-xay-dung.htm" title="Kinh nghiệm xây dựng">Kinh nghiệm xây dựng</a></h4></li><li><h4><a href="/kien-truc-bon-phuong.htm" title="Kiến trúc bốn phương">Kiến trúc bốn phương</a></h4></li></ul></li><li class="lv0"><h3><a href="/khong-gian-song.htm" title="Không gian sống">Không gian sống</a></h3><ul class="dropdown-menu"><li><h4><a href="/nha-dep.htm" title="Nhà đẹp">Nhà đẹp</a></h4></li><li><h4><a href="/noi-that.htm" title="Nội thất">Nội thất</a></h4></li><li><h4><a href="/ngoai-that.htm" title="Ngoại thất
-">Ngoại thất
-</a></h4></li><li><h4><a href="/mach-ban.htm" title="Mách bạn
-">Mách bạn
-</a></h4></li></ul></li><li class="lv0"><h3><a href="/phong-thuy.htm" title="Phong thủy">Phong thủy</a></h3></li><li class="lv0"><h3><a href="/tu-van-luat.htm" title="Tư vấn luật
-">Tư vấn luật
-</a></h3></li>
-            <li class="lv0">
-                <h3><a href="/du-an-bat-dong-san.htm" title="Dự án">Dự án</a></h3>
-                <ul class="dropdown-menu">
-                    <li><h4><a href="/cao-oc-van-phong.htm" title="Cao ốc văn phòng">Cao ốc văn phòng</a></h4></li>
-                    <li><h4><a href="/khu-can-ho.htm" title="Khu căn hộ">Khu căn hộ</a></h4></li>
-                    <li><h4><a href="/khu-do-thi-moi.htm" title="Khu đô thị mới">Khu đô thị mới</a></h4></li>
-                    <li><h4><a href="/khu-thuong-mai-dich-vu.htm" title="Khu thương mại dịch vụ">Khu thương mại dịch vụ</a></h4></li>
-                    <li><h4><a href="/khu-phuc-hop.htm" title="Khu phức hợp">Khu phức hợp</a></h4></li>
-                    <li><h4><a href="/khu-dan-cu.htm" title="Khu dân cư">Khu dân cư</a></h4></li>
-                    <li><h4><a href="/khu-du-lich-nghi-duong.htm" title="Khu du lịch nghỉ dưỡng">Khu du lịch nghỉ dưỡng</a></h4></li>
-                    <li><h4><a href="/khu-cong-nghiep.htm" title="Khu công nghiệp">Khu công nghiệp</a></h4></li>
-                    <li><h4><a href="/du-an-khac.htm" title="Dự án khác">Dự án khác</a></h4></li>
-                </ul>
-            </li>
-
-             
-            <li class="postnew lv0">
-                <h3><a href="/dang-tin-ban-cho-thue-nha-dat.htm" title="Đăng tin">Đăng tin</a></h3>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-<script type="text/javascript">
-
-    $("#ButtonActive").click(function () {
-        var url = "/thong-bao-kich-hoat.htm";
-        $('#ButtonActive').attr("href", url);
-        $('#ButtonActive').fancybox({
-            scrolling: 'no',
-            padding: 0,
-            width: 440,
-            fitToView: false,
-            preload: true,
-            closeBtn: false,
-            afterClose: function () {
-                $.fancybox.close();
-            },
-            helpers: {
-                title: null
-            }
-        });
-    });
-
-    var href = window.location.pathname;
-    var a_return = new Array(); // Danh sách Url được active
-    var AllUrl = new Array(); // arr Url
-    var ElementUrl = $(".nav-menu li a");
-
-    var arrHref = href.split("/"); // phân tích current url 
-
-    for (var i = 0; i < ElementUrl.length; i++) {
-        var abc = ElementUrl[i].toString().split("/");
-        if (abc.length > 3) {
-            AllUrl.push(abc[3].replace(".htm", "")); // lấy được arr url
-        }
-    }
-
-    if (arrHref.length >= 2) {
-        var currentUrl = arrHref[1];
-        for (var i = 0; i < AllUrl.length; i++) {
-            var _index = currentUrl.search(AllUrl[i]); //Duyet chuoi danh sach Url de so sanh voi Current Url
-            if (_index != -1) {
-                a_return.push(AllUrl[i]); //Neu la tap con cua URL thi add vao array 
-            }
-        }
-    }
-
-    var return_data = "";
-    var return_index = 0;
-    for (x in a_return) {
-        if (a_return[x].length > return_index) {//so sanh do dai lon nhat trung` voi URL thi lay gia tri
-            return_index = a_return[x].length;
-            return_data = a_return[x]; //gia tri can lay (duy nhat 1 gia tri)
-        }
-    }
-    var taga = $('.nav-menu,.dropdown-menu').find('a[href=\'/' + return_data + '.htm\']');
-
-    if (href == '/rao-vat.htm' || strEndsWith(href, '-rv.htm') || href.indexOf('-prv') > -1) {
-        $(".lv0").removeClass('active');
-        $('#liRaovat').addClass('active');
-    }
-    else if (taga.length > 0) {
-        setActiveClass(taga, 0);
-    }
-
-    function strEndsWith(str, suffix) {
-        return str.match(suffix + "$") == suffix;
-    }
-
-    function setActiveClass(tag, interval) {
-
-        $(".lv0").removeClass('active');
-        tag.addClass('active');
-
-        if (tag.hasClass('lv0')) {
-
-            return;
-        }
-        interval++;
-        if (interval <= 4) { // Menu dothi chỉ có 2 cấp, ul > li > ul > li. ra 3 cấp mới set được parrent
-            setActiveClass(tag.parent(), interval);
-
-        } else {
-        }
-    }
-</script>
-
-        <div class="wr_page">
-            
-    <!-- Box Search -->
-    
-<link href="/Scripts/jquery-ui.css" rel="stylesheet">
-<link href="/Scripts/select2/select2.min.css" rel="stylesheet">
-<script src="/Scripts/select2/select2.full.min.js"></script>
-
-<!-- Box Search -->
-<div class="search">
-    
-    <div class="search-tab">
-        <div class="search-tab-content">
+<div class="wr_page">
+   <div class="search">
+      <div class="search-tab">
+         <div class="search-tab-content">
             <div class="tab-sell tab-active" id="divSell">
-                <h2>bất động sản bán</h2>
+               <h2>bất động sản bán</h2>
             </div>
             <div class="tab-rent" id="divRent">
-                <h2>bất động sản cho thuê</h2>
+               <h2>bất động sản cho thuê</h2>
             </div>
             <div class="clear"></div>
-        </div>
-    </div>
-    <div class="search-content">
-        <div class="search-content-input">
+         </div>
+      </div>
+      <div class="search-content">
+         <div class="search-content-input">
             <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboType" id="hddcboType" value="38">
             <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboCate" id="hddcboCate" value="-1">
             <div class="input1" id="KeyDownEnterHome">
-                <input name="ctl00$ContentPlaceHolder1$BoxSearch1$txtAutoComplete" type="text" id="txtAutoComplete" class="ui-autocomplete-input" placeholder="Nhập địa điểm, vd: The Manor" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-
+               <input name="ctl00$ContentPlaceHolder1$BoxSearch1$txtAutoComplete" type="text" id="txtAutoComplete" class="ui-autocomplete-input" placeholder="Nhập địa điểm, vd: The Manor" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
             </div>
             <div class="input1 paddingleft0">
-                <div class="option-item" id="cboCate"> <div class="section" style="width:290px;"><span class="segtext">Loại bất động sản</span><span class="segdart"></span></div> <div class="gridcontainer" style="min-width:290px; display:none;">  <ul style="min-width:290px">  <li rel="-1" class="selected">Loại bất động sản</li> <li rel="324">- Bán căn hộ chung cư</li> <li rel="362">- Tất cả các loại nhà bán</li> <li rel="41">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà riêng</li> <li rel="325">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà biệt thự, liền kề</li> <li rel="163">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà mặt phố</li> <li rel="361">- Tất cả các loại đất bán</li> <li rel="40">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán đất nền dự án</li> <li rel="283">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán đất</li> <li rel="44">- Bán trang trại, khu nghỉ dưỡng</li> <li rel="45">- Bán kho, nhà xưởng</li> <li rel="48">- Bán loại bất động sản khác</li> </ul> </div></div>
-
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboCity" id="hddcboCity" value="VN">
-                
-                <div class="section" style="margin-right:4px;">
-                    <select id="ddlCity" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="-1">Tỉnh/Thành phố</option><option value="SG">Hồ Chí Minh</option><option value="HN">Hà Nội</option><option value="BD">Bình Dương</option><option value="DDN">Đà Nẵng</option><option value="HP">Hải Phòng</option><option value="LA">Long An</option><option value="VT">Bà Rịa Vũng Tàu</option><option value="AG">An Giang</option><option value="BG">Bắc Giang</option><option value="BK">Bắc Kạn</option><option value="BL">Bạc Liêu</option><option value="BN">Bắc Ninh</option><option value="BTR">Bến Tre</option><option value="BDD">Bình Định</option><option value="BP">Bình Phước</option><option value="BTH">Bình Thuận  </option><option value="CM">Cà Mau</option><option value="CT">Cần Thơ</option><option value="CB">Cao Bằng</option><option value="DDL">Đắk Lắk</option><option value="DNO">Đắk Nông</option><option value="DDB">Điện Biên</option><option value="DNA">Đồng Nai</option><option value="DDT">Đồng Tháp</option><option value="GL">Gia Lai</option><option value="HG">Hà Giang</option><option value="HNA">Hà Nam</option><option value="HT">Hà Tĩnh</option><option value="HD">Hải Dương</option><option value="HGI">Hậu Giang</option><option value="HB">Hòa Bình</option><option value="HY">Hưng Yên</option><option value="KH">Khánh Hòa</option><option value="KG">Kiên Giang</option><option value="KT">Kon Tum</option><option value="LCH">Lai Châu</option><option value="LDD">Lâm Đồng</option><option value="LS">Lạng Sơn</option><option value="LCA">Lào Cai</option><option value="NDD">Nam Định</option><option value="NA">Nghệ An</option><option value="NB">Ninh Bình</option><option value="NT">Ninh Thuận</option><option value="PT">Phú Thọ</option><option value="PY">Phú Yên</option><option value="QB">Quảng Bình</option><option value="QNA">Quảng Nam</option><option value="QNG">Quảng Ngãi</option><option value="QNI">Quảng Ninh</option><option value="QT">Quảng Trị</option><option value="ST">Sóc Trăng</option><option value="SL">Sơn La</option><option value="TNI">Tây Ninh</option><option value="TB">Thái Bình</option><option value="TN">Thái Nguyên</option><option value="TH">Thanh Hóa</option><option value="TTH">Thừa Thiên Huế</option><option value="TG">Tiền Giang</option><option value="TV">Trà Vinh</option><option value="TQ">Tuyên Quang</option><option value="VL">Vĩnh Long</option><option value="VP">Vĩnh Phúc</option><option value="YB">Yên Bái</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 125px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlCity-container"><span class="select2-selection__rendered" id="select2-ddlCity-container" title="Tỉnh/Thành phố">Tỉnh/Thành phố</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                </div>
-
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboDist" id="hddcboDist" value="-1">
-                
-
-                <div class="section" style="margin-right:4px;">
-                    <select id="ddlDistrict" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="-1">Quận/Huyện</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 99px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlDistrict-container"><span class="select2-selection__rendered" id="select2-ddlDistrict-container" title="Quận/Huyện">Quận/Huyện</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                </div>
-
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboArea" id="hddcboArea" value="-1">
-                <div class="option-item " id="cboArea"> <div class="section" style="width:290px;"><span class="segtext">Diện tích</span><span class="segdart"></span></div> <div class="gridcontainer" style="min-width:290px; display:none;">  <ul style="min-width:290px">  <li rel="-1" class="selected">Diện tích</li> <li rel="0">Không xác định</li> <li rel="1">&lt;= 30 m2</li> <li rel="2">30-50 m2</li> <li rel="3">50-80 m2</li> <li rel="4">80-100 m2</li> <li rel="5">100-150 m2</li> <li rel="6">150-200 m2</li> <li rel="7">200-250 m2</li> <li rel="8">250-300 m2</li> <li rel="9">300-500 m2</li> <li rel="10">&gt;=500 m2</li> </ul> </div></div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboPrice" id="hddcboPrice" value="-1">
-                <div class="option-item " id="cboPrice"> <div class="section" style="width:290px;"><span class="segtext">Mức giá</span><span class="segdart"></span></div> <div class="gridcontainer" style="min-width:290px; display:none;">  <ul style="min-width:290px">  <li rel="-1" class="selected">Mức giá</li> <li rel="0">Thỏa thuận</li> <li rel="1">&lt; 500 triệu</li> <li rel="2">500 - 800 triệu</li> <li rel="3">800 - 1 tỷ</li> <li rel="4">1 - 2 tỷ</li> <li rel="5">2 - 3 tỷ</li> <li rel="6">3 - 5 tỷ</li> <li rel="7">5 - 7 tỷ</li> <li rel="8">7 - 10 tỷ</li> <li rel="9">10 - 20 tỷ</li> <li rel="10">20 - 30 tỷ</li> <li rel="11">&gt; 30 tỷ</li> </ul> </div></div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboWard" id="hddcboWard" value="-1">
-
-
-                
-                <div class="section" style="margin-right:4px;">
-                    <select id="ddlWard" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="-1">Phường/Xã</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 90px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlWard-container"><span class="select2-selection__rendered" id="select2-ddlWard-container" title="Phường/Xã">Phường/Xã</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                </div>
-
+               <div class="option-item" id="cboCate">
+                  <div class="section" style="width:290px;"><span class="segtext">Loại bất động sản</span><span class="segdart"></span></div>
+                  <div class="gridcontainer" style="min-width:290px; display:none;">
+                     <ul style="min-width:290px">
+                        <li rel="-1" class="selected">Loại bất động sản</li>
+                        <li rel="324">- Bán căn hộ chung cư</li>
+                        <li rel="362">- Tất cả các loại nhà bán</li>
+                        <li rel="41">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà riêng</li>
+                        <li rel="325">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà biệt thự, liền kề</li>
+                        <li rel="163">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán nhà mặt phố</li>
+                        <li rel="361">- Tất cả các loại đất bán</li>
+                        <li rel="40">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán đất nền dự án</li>
+                        <li rel="283">&nbsp;&nbsp;&nbsp;&nbsp;+ Bán đất</li>
+                        <li rel="44">- Bán trang trại, khu nghỉ dưỡng</li>
+                        <li rel="45">- Bán kho, nhà xưởng</li>
+                        <li rel="48">- Bán loại bất động sản khác</li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboCity" id="hddcboCity" value="VN">
+               <div class="section" style="margin-right:4px;">
+                  <select id="ddlCity" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                     <option value="-1">Tỉnh/Thành phố</option>
+                     <option value="SG">Hồ Chí Minh</option>
+                     <option value="HN">Hà Nội</option>
+                     <option value="BD">Bình Dương</option>
+                     <option value="DDN">Đà Nẵng</option>
+                     <option value="HP">Hải Phòng</option>
+                     <option value="LA">Long An</option>
+                     <option value="VT">Bà Rịa Vũng Tàu</option>s
+                     <option value="AG">An Giang</option>
+                     <option value="BG">Bắc Giang</option>
+                     <option value="BK">Bắc Kạn</option>
+                     <option value="BL">Bạc Liêu</option>
+                     <option value="BN">Bắc Ninh</option>
+                     <option value="BTR">Bến Tre</option>
+                     <option value="BDD">Bình Định</option>
+                     <option value="BP">Bình Phước</option>
+                     <option value="BTH">Bình Thuận  </option>
+                     <option value="CM">Cà Mau</option>
+                     <option value="CT">Cần Thơ</option>
+                     <option value="CB">Cao Bằng</option>
+                     <option value="DDL">Đắk Lắk</option>
+                     <option value="DNO">Đắk Nông</option>
+                     <option value="DDB">Điện Biên</option>
+                     <option value="DNA">Đồng Nai</option>
+                     <option value="DDT">Đồng Tháp</option>
+                     <option value="GL">Gia Lai</option>
+                     <option value="HG">Hà Giang</option>
+                     <option value="HNA">Hà Nam</option>
+                     <option value="HT">Hà Tĩnh</option>
+                     <option value="HD">Hải Dương</option>
+                     <option value="HGI">Hậu Giang</option>
+                     <option value="HB">Hòa Bình</option>
+                     <option value="HY">Hưng Yên</option>
+                     <option value="KH">Khánh Hòa</option>
+                     <option value="KG">Kiên Giang</option>
+                     <option value="KT">Kon Tum</option>
+                     <option value="LCH">Lai Châu</option>
+                     <option value="LDD">Lâm Đồng</option>
+                     <option value="LS">Lạng Sơn</option>
+                     <option value="LCA">Lào Cai</option>
+                     <option value="NDD">Nam Định</option>
+                     <option value="NA">Nghệ An</option>
+                     <option value="NB">Ninh Bình</option>
+                     <option value="NT">Ninh Thuận</option>
+                     <option value="PT">Phú Thọ</option>
+                     <option value="PY">Phú Yên</option>
+                     <option value="QB">Quảng Bình</option>
+                     <option value="QNA">Quảng Nam</option>
+                     <option value="QNG">Quảng Ngãi</option>
+                     <option value="QNI">Quảng Ninh</option>
+                     <option value="QT">Quảng Trị</option>
+                     <option value="ST">Sóc Trăng</option>
+                     <option value="SL">Sơn La</option>
+                     <option value="TNI">Tây Ninh</option>
+                     <option value="TB">Thái Bình</option>
+                     <option value="TN">Thái Nguyên</option>
+                     <option value="TH">Thanh Hóa</option>
+                     <option value="TTH">Thừa Thiên Huế</option>
+                     <option value="TG">Tiền Giang</option>
+                     <option value="TV">Trà Vinh</option>
+                     <option value="TQ">Tuyên Quang</option>
+                     <option value="VL">Vĩnh Long</option>
+                     <option value="VP">Vĩnh Phúc</option>
+                     <option value="YB">Yên Bái</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 125px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlCity-container"><span class="select2-selection__rendered" id="select2-ddlCity-container" title="Tỉnh/Thành phố">Tỉnh/Thành phố</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboDist" id="hddcboDist" value="-1">
+               <div class="section" style="margin-right:4px;">
+                  <select id="ddlDistrict" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                     <option value="-1">Quận/Huyện</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 99px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlDistrict-container"><span class="select2-selection__rendered" id="select2-ddlDistrict-container" title="Quận/Huyện">Quận/Huyện</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboArea" id="hddcboArea" value="-1">
+               <div class="option-item " id="cboArea">
+                  <div class="section" style="width:290px;"><span class="segtext">Diện tích</span><span class="segdart"></span></div>
+                  <div class="gridcontainer" style="min-width:290px; display:none;">
+                     <ul style="min-width:290px">
+                        <li rel="-1" class="selected">Diện tích</li>
+                        <li rel="0">Không xác định</li>
+                        <li rel="1">&lt;= 30 m2</li>
+                        <li rel="2">30-50 m2</li>
+                        <li rel="3">50-80 m2</li>
+                        <li rel="4">80-100 m2</li>
+                        <li rel="5">100-150 m2</li>
+                        <li rel="6">150-200 m2</li>
+                        <li rel="7">200-250 m2</li>
+                        <li rel="8">250-300 m2</li>
+                        <li rel="9">300-500 m2</li>
+                        <li rel="10">&gt;=500 m2</li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboPrice" id="hddcboPrice" value="-1">
+               <div class="option-item " id="cboPrice">
+                  <div class="section" style="width:290px;"><span class="segtext">Mức giá</span><span class="segdart"></span></div>
+                  <div class="gridcontainer" style="min-width:290px; display:none;">
+                     <ul style="min-width:290px">
+                        <li rel="-1" class="selected">Mức giá</li>
+                        <li rel="0">Thỏa thuận</li>
+                        <li rel="1">&lt; 500 triệu</li>
+                        <li rel="2">500 - 800 triệu</li>
+                        <li rel="3">800 - 1 tỷ</li>
+                        <li rel="4">1 - 2 tỷ</li>
+                        <li rel="5">2 - 3 tỷ</li>
+                        <li rel="6">3 - 5 tỷ</li>
+                        <li rel="7">5 - 7 tỷ</li>
+                        <li rel="8">7 - 10 tỷ</li>
+                        <li rel="9">10 - 20 tỷ</li>
+                        <li rel="10">20 - 30 tỷ</li>
+                        <li rel="11">&gt; 30 tỷ</li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboWard" id="hddcboWard" value="-1">
+               <div class="section" style="margin-right:4px;">
+                  <select id="ddlWard" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                     <option value="-1">Phường/Xã</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 90px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlWard-container"><span class="select2-selection__rendered" id="select2-ddlWard-container" title="Phường/Xã">Phường/Xã</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+               </div>
             </div>
             <div class="input1 paddingleft0">
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboStreet" id="hddcboStreet" value="-1">
-                
-                <div class="section" style="margin-right:4px;">
-                    <select id="ddlStreets" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="0">Đường/Phố</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlStreets-container"><span class="select2-selection__rendered" id="select2-ddlStreets-container" title="Đường/Phố">Đường/Phố</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                </div>
-
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboRoom" id="hddcboRoom" value="-1">
-                <div class="option-item" id="cboRoom"> <div class="section" style="width:290px;"><span class="segtext">Số phòng ngủ</span><span class="segdart"></span></div> <div class="gridcontainer" style="min-width:290px; display:none;">  <ul style="min-width:290px">  <li rel="-1" class="selected">Số phòng ngủ</li> <li rel="0">Không xác định</li> <li rel="1">1+</li> <li rel="2">2+</li> <li rel="3">3+</li> <li rel="4">4+</li> <li rel="5">5+</li> </ul> </div></div>
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboDirection" id="hddcboDirection" value="-1">
-                <div class="option-item" id="cboDirection"> <div class="section" style="width:290px;"><span class="segtext">Hướng nhà</span><span class="segdart"></span></div> <div class="gridcontainer" style="min-width:290px; display:none;">  <ul style="min-width:290px">  <li rel="-1" class="selected">Hướng nhà</li> <li rel="0">Không xác định</li> <li rel="1">Đông</li> <li rel="2">Tây</li> <li rel="3">Nam</li> <li rel="4">Bắc</li> <li rel="5">Đông-Bắc</li> <li rel="6">Tây-Bắc</li> <li rel="7">Tây-Nam</li> <li rel="8">Đông-Nam</li> </ul> </div></div>
-
-                <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboProject" id="hddcboProject" value="0">
-                
-                <div class="section" style="margin-right:4px;">
-                    <select id="ddlProjects" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true"><option value="-1">Dự án</option></select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 59px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlProjects-container"><span class="select2-selection__rendered" id="select2-ddlProjects-container" title="Dự án">Dự án</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                </div>
-
-                <a id="ContentPlaceHolder1_BoxSearch1_lbtSearch" class="btnsearch" rel="nofollow" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$BoxSearch1$lbtSearch','')">
-                        <%= image_tag "Images/search.png", alt: "search" %>
-                </a>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboStreet" id="hddcboStreet" value="-1">
+               <div class="section" style="margin-right:4px;">
+                  <select id="ddlStreets" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                     <option value="0">Đường/Phố</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 92px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlStreets-container"><span class="select2-selection__rendered" id="select2-ddlStreets-container" title="Đường/Phố">Đường/Phố</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboRoom" id="hddcboRoom" value="-1">
+               <div class="option-item" id="cboRoom">
+                  <div class="section" style="width:290px;"><span class="segtext">Số phòng ngủ</span><span class="segdart"></span></div>
+                  <div class="gridcontainer" style="min-width:290px; display:none;">
+                     <ul style="min-width:290px">
+                        <li rel="-1" class="selected">Số phòng ngủ</li>
+                        <li rel="0">Không xác định</li>
+                        <li rel="1">1+</li>
+                        <li rel="2">2+</li>
+                        <li rel="3">3+</li>
+                        <li rel="4">4+</li>
+                        <li rel="5">5+</li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboDirection" id="hddcboDirection" value="-1">
+               <div class="option-item" id="cboDirection">
+                  <div class="section" style="width:290px;"><span class="segtext">Hướng nhà</span><span class="segdart"></span></div>
+                  <div class="gridcontainer" style="min-width:290px; display:none;">
+                     <ul style="min-width:290px">
+                        <li rel="-1" class="selected">Hướng nhà</li>
+                        <li rel="0">Không xác định</li>
+                        <li rel="1">Đông</li>
+                        <li rel="2">Tây</li>
+                        <li rel="3">Nam</li>
+                        <li rel="4">Bắc</li>
+                        <li rel="5">Đông-Bắc</li>
+                        <li rel="6">Tây-Bắc</li>
+                        <li rel="7">Tây-Nam</li>
+                        <li rel="8">Đông-Nam</li>
+                     </ul>
+                  </div>
+               </div>
+               <input type="hidden" name="ctl00$ContentPlaceHolder1$BoxSearch1$hddcboProject" id="hddcboProject" value="0">
+               <div class="section" style="margin-right:4px;">
+                  <select id="ddlProjects" class="select-menu select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                     <option value="-1">Dự án</option>
+                  </select>
+                  <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 59px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ddlProjects-container"><span class="select2-selection__rendered" id="select2-ddlProjects-container" title="Dự án">Dự án</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+               </div>
+               <a id="ContentPlaceHolder1_BoxSearch1_lbtSearch" class="btnsearch" rel="nofollow" href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$BoxSearch1$lbtSearch','')">
+               <%= image_tag "Images/search.png", alt: "search" %>
+               </a>
             </div>
-
-        </div>
-    </div>
-    <div class="clear"></div>
-</div>
-<!-- End Box Search -->
-
-<script type="text/javascript">
-    $(function () {
-        var cnt = 0;
-        $("#KeyDownEnterHome").keyup(function (event) {
-            if (event.keyCode == 13 && cnt > 0) {
-                cnt = 0;
-                window.__doPostBack('ctl00$ContentPlaceHolder1$BoxSearch1$lbtSearch', '');
-            }
-            else if (event.keyCode == 13) {
-                cnt++;
-            }
-        });
-    });
-
-    $('#ddlCity').on('change', function () {
-        $("#hddcboCity").val($('#ddlCity').val());
-        $("#hddcboDist").val(-1);
-        $("#hddcboWard").val(-1);
-        $("#hddcboStreet").val(-1);
-        $("#hddcboProject").val(-1);
-        GetDistrict($('#ddlCity').val());
-    });
-    $('#ddlDistrict').on('change', function () {
-        $("#hddcboDist").val($('#ddlDistrict').val());
-        ChangeDistrict($('#ddlDistrict').val());
-    });
-    $('#ddlWard').on('change', function () {
-        $("#hddcboWard").val($('#ddlWard').val());
-        $("#hddWardPrefix").val($('#ddlWard').find('option:selected').attr('wardprefix'));
-        $("#hddcboStreet").val(-1);
-        GetStreets($('#ddlDistrict').val());
-    });
-    $('#ddlStreets').on('change', function () {
-        $("#hddcboStreet").val($('#ddlStreets').val());
-        $('#hddStreetPrefix').val($('#ddlStreets').find('option:selected').attr('streetprefix'));
-    });
-    $('#ddlProjects').on('change', function () {
-        $("#hddcboProject").val($('#ddlProjects').val());
-        var wardId = $('#ddlProjects option:selected').attr('wardid');
-        if (wardId > 0) {
-            $('#select2-ddlWard-container').html($('#ddlWard option[value="' + wardId + '"]').html());
-            $('#ddlWard').val(wardId);
-            $("#hddcboWard").val(wardId);
-        }
-    });
-    $('select').select2({
-        matcher: function (params, data) {
-            if ($.trim(params.term) === '') {
-                return data;
-            }
-            var _keyword = UnicodeToKoDau(data.text.toLowerCase());
-            var _text = UnicodeToKoDau(params.term.toLowerCase());
-            if (_keyword.indexOf(_text) == 0) {
-                var modifiedData = $.extend({}, data, true);
-                modifiedData.text;
-                return modifiedData;
-            }
-            return null;
-        }
-    });
-
-</script>
-
-<script src="/Scripts/BoxSearchNew.js" type="text/javascript"></script>
-
-    <div class="clear"></div>
-    <!-- End Box Search -->
-    <!-- Index Page -->
-    <div class="index-page">
-        <div class="content">
-            
-<div class="news-default fl">
-    
-    <div class="news-default-left" id="hothome_0" style="display: none;">
-        <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
-            <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/1-0de1.jpg", alt: "Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ" %>
-        </a>
-        <h2>
-            <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
-                Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ</a>
-        </h2>
-        
-    </div>
-    
-            <div class="news-default-left" id="hothome_1" style="display: none">
-                <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
-                    <%= image_tag "https://img.dothi.net/2018/05/26/LeS0RvL7/h3-4628.jpg", alt: "Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4" %>
-                </a>
-                <h2>
-                    <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
-                        Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4</a>
-                </h2>
-                
-            </div>
-        
-            <div class="news-default-left" id="hothome_2" style="display: none">
-                <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
-                    <%= image_tag "https://img.dothi.net/2018/05/28/LeS0RvL7/tp-d58b.jpg", alt: "" %>
-                </a>
-                <h2>
-                    <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
-                        "Điểm mặt" những nơi nên tránh khi mua nhà đất</a>
-                </h2>
-                
-            </div>
-        
-            <div class="news-default-left" id="hothome_3" style="display: block;">
-                <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
-                    <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/7-ca9a.jpg", alt: "Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi" %>
-                </a>
-                <h2>
-                    <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
-                        Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi</a>
-                </h2>
-                
-            </div>
-        
-            <div class="news-default-left" id="hothome_4" style="display: none;">
-                <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
-                    <%= image_tag "https://img.dothi.net/2018/05/28/LeS0RvL7/n1-35ba.jpg", alt: "Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan" %>
-                </a>
-                <h2>
-                    <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
-                        Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan</a>
-                </h2>
-                
-            </div>
-        
-            <div class="news-default-left" id="hothome_5" style="display: none;">
-                <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
-                    <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/8-5bb1.jpg", alt: "Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018" %>
-                </a>
-                <h2>
-                    <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
-                        Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018</a>
-                </h2>
-                
-            </div>
-        
-    <div class="news-default-right" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 325px;">
-        <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 715px; top: -65px;"><li id="li_2" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
-                                Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống ...
-                            </a>
-                        </h3>
-                    </li><li id="li_3" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
-                                Khám phá không gian sống cực quyến rũ trong ngôi nhà màu ...
-                            </a>
-                        </h3>
-                    </li><li id="li_4" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
-                                Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ ...
-                            </a>
-                        </h3>
-                    </li><li id="li_5" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
-                                Văn phòng làm việc “nhà người ta” khiến ai cũng phải ...
-                            </a>
-                        </h3>
-                    </li>
-            
-                    <li class="first" id="li_0" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
-                                Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4
-                            </a>
-                        </h3>
-                    </li>
-                
-                    <li id="li_1" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
-                                "Điểm mặt" những nơi nên tránh khi mua nhà đất
-                            </a>
-                        </h3>
-                    </li>
-                
-                    <li id="li_2" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
-                                Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống ...
-                            </a>
-                        </h3>
-                    </li>
-                
-                    <li id="li_3" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
-                                Khám phá không gian sống cực quyến rũ trong ngôi nhà màu ...
-                            </a>
-                        </h3>
-                    </li>
-                
-                    <li id="li_4" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
-                                Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ ...
-                            </a>
-                        </h3>
-                    </li>
-                
-                    <li id="li_5" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
-                                Văn phòng làm việc “nhà người ta” khiến ai cũng phải ...
-                            </a>
-                        </h3>
-                    </li>
-                
-            
-        <li class="first" id="li_0" style="overflow: hidden; float: none; width: 226px; height: 46px;">
-                        <h3>
-                            <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
-                                Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4
-                            </a>
-                        </h3>
-                    </li></ul>
-    </div>
-    <div class="clear">
-    </div>
-</div>
-
-        <div class="most-read">
-            <div class="title">
-                <h3>
-                    Tin xem nhiều</h3>
-            </div>
-            <ul>
-    
-        <li class="first">
-            <h4>
-                <a href="/tin-thi-truong/horea-chua-co-kha-nang-xay-ra-bong-bong-bat-dong-san-ar37473.htm" title="HoREA: Chưa có khả năng xảy ra bong bóng bất động sản">
-                    HoREA: Chưa có khả năng xảy ra bong bóng bất động sản</a></h4>
-        </li>
-    
-        <li>
-            <h4>
-                <a href="/tin-du-an/tphcm-se-ban-dau-gia-200-can-ho-thuoc-khu-tai-dinh-cu-phu-my-ar37316.htm" title="Tp.HCM sẽ bán đấu giá 200 căn hộ thuộc Khu tái định cư Phú Mỹ">
-                    Tp.HCM sẽ bán đấu giá 200 căn hộ thuộc Khu tái định cư Phú Mỹ</a></h4>
-        </li>
-    
-        <li>
-            <h4>
-                <a href="/noi-that/diem-danh-nhung-phong-cach-thiet-ke-noi-that-noi-bat-trong-nam-2018-ar37494.htm" title="Điểm danh những phong cách thiết kế nội thất nổi bật trong năm 2018">
-                    Điểm danh những phong cách thiết kế nội thất nổi bật trong năm 2018</a></h4>
-        </li>
-    
-        <li>
-            <h4>
-                <a href="/nha-dep/cach-tang-view-cho-can-ho-56m2-ma-khong-ton-dien-tich-ar37483.htm" title="Cách tăng " view"="" cho="" căn="" hộ="" 56m2="" mà="" không="" tốn="" diện="" tích"="">
-                    Cách tăng "view" cho căn hộ 56m2 mà không tốn diện tích</a></h4>
-        </li>
-    
-        <li>
-            <h4>
-                <a href="/tu-van-thiet-ke/mau-nha-pho-3-tang-giup-bo-sung-nang-luong-tich-cuc-cho-nguoi-o-ar37619.htm" title="Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở">
-                    Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở</a></h4>
-        </li>
-    
-        </ul> </div>
-    
-<div style="width: 658px; float: left">
-    
-        <div class="mid-banner" id="Banner_KM_Mid_64">
-            <a href="/banner-click-64.htm?url=https://file.dothi.net/landingpage/gem-riverside/index.aspx#Home" rel="nofollow" target="_blank">
-                <%= image_tag "https://img.dothi.net/2018/05/17/20180517165738-a0f1.gif", alt: "Banner giữa - trang chủ - LuyenVT1" %>
-            </a>
-        </div>
-    
-
-</div>
-<script type="text/javascript">
-
-    $(function () {
-        var i = 0;
-        var len = 5;
-        var first = true;
-        var o = $(".news-default-right").jCarouselLite({
-            vertical: true,
-            hoverPause: false,
-            visible: 5,
-            start: 0,
-            warp: "circle",
-            auto: 1,
-            speed: 1000,
-            beforeStart: function (a) {
-                if (!first)
-                    $(a).parent().delay(1000);
-            },
-            afterEnd: function (a) {
-                if (first) {
-                    first = false;
-                }
-
-                $(".news-default-left").css("display", "none");
-                $("#hothome_" + (len - i)).css("display", "block");
-
-                i++;
-                if (i > len) i = 0;
-            }
-        });
-    });
-
-
-</script>
-
-            
-            <!-- Content Right -->
-            <div class="content-right content-home">
-                
-                
-                
-                <div id="ContentPlaceHolder1_ProjectHome_divProject" class="project-hl">
-    <div class="hl-title">
-        <h3><a href="/du-an-bat-dong-san.htm" title="Dự án nổi bật">Dự án nổi bật</a></h3>
-    </div>
-    <div class="wr_project">
-        <div class="wr_slide">
-            <div class="slideproject">
-                <div id="sliderA" class="slider" style="position: relative;"><div class="slide-dragcontainer" style="cursor: pointer;"><div class="slide-container" style="position: relative; width: 309px; overflow: hidden; height: 550px;"><div class="slide-wrapper" style="position: relative; left: 0px; height: 550px; transition-duration: 500ms; transition-timing-function: linear; transform: translateX(-1545px);">
-                    
-                            <div class="slide" style="position: absolute; top: 0px; left: 1854px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180525113252-a92f-0I4XNtd4.jpg", alt: "Central Bay Da Nang City" %>
-                                </a>
-                                <h4><a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">Central Bay Da Nang City</a></h4>
-                                <p>Đường Nguyễn Tất Thành, Liên Chiểu, Đà Nẵng</p>
-                            </div>
-                        
-                            <div class="slide" style="position: absolute; top: 0px; left: 2163px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180523143055-5bbd-hmcVYWuR.jpg", alt: "Chung cư Sơn Thịnh 3" %>
-                                </a>
-                                <h4><a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">Chung cư Sơn Thịnh 3</a></h4>
-                                <p>408A Đường Lê Hồng Phong, Phường Thắng Tam, Vũng Tàu, Bà Rịa Vũng Tàu</p>
-                            </div>
-                        
-                            <div class="slide" style="position: absolute; top: 0px; left: 618px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180523110326-37af-0I4XNtd4.jpg", alt: "Chợ Thu Lộ" %>
-                                </a>
-                                <h4><a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">Chợ Thu Lộ</a></h4>
-                                <p>Đường Nguyễn Chánh, phường Trần Phú, Quảng Ngãi, Quảng Ngãi</p>
-                            </div>
-                        
-                            <div class="slide" style="position: absolute; top: 0px; left: 927px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522133946-484b-hmcVYWuR.jpg", alt: "Khu đô thị Núi Long" %>
-                                </a>
-                                <h4><a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">Khu đô thị Núi Long</a></h4>
-                                <p>Phường Đông Vệ, Thanh Hóa, Thanh Hóa</p>
-                            </div>
-                        
-                            <div class="slide" style="position: absolute; top: 0px; left: 1236px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522114758-93b5-hmcVYWuR.jpg", alt: "Anland 2" %>
-                                </a>
-                                <h4><a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">Anland 2</a></h4>
-                                <p>Lô đất HH01, Đường Tố Hữu, Phường Dương Nội, Hà Đông, Hà Nội</p>
-                            </div>
-                        
-                            <div class="slide es-active" style="position: absolute; top: 0px; left: 1545px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
-                                <a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">
-                                    <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522103159-a4f4-0I4XNtd4.jpg", alt: "Thành Phố Cà Phê" %>
-                                </a>
-                                <h4><a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">Thành Phố Cà Phê</a></h4>
-                                <p>Đường Nguyễn Đình Chiểu, xã Tân Lợi, Buôn Ma Thuột, Đắk Lắk</p>
-                            </div>
-                        
-                    
-                </div><div class="slide-prev" style="display: none;"></div><div class="slide-next" style="display: none;"></div></div></div><ul class="es-pager"><li rel="0" class=""></li><li rel="1" class=""></li><li rel="2" class=""></li><li rel="3" class=""></li><li rel="4" class=""></li><li rel="5" class="act"></li></ul></div>
-            </div>
-        </div>
-        <div class="thumbSlide">
-            <div class="listproject">
-                
-                        <div rel="0" class="item first">
-                            <a class="tt_project" href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180525113252-a92f-0I4XNtd4.jpg", class: "avatar", alt: "Central Bay Da Nang City" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">Central Bay Da Nang City</a>
-                                <p>Đường Nguyễn Tất Thành, Liên Chiểu, Đà Nẵng</p>
-                            </div>
-                        </div>
-                    
-                        <div rel="1" class="item">
-                            <a class="tt_project" href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180523143055-5bbd-hmcVYWuR.jpg", class: "avatar", alt: "Chung cư Sơn Thịnh 3" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">Chung cư Sơn Thịnh 3</a>
-                                <p>408A Đường Lê Hồng Phong, Phường Thắng Tam, Vũng Tàu, Bà Rịa Vũng Tàu</p>
-                            </div>
-                        </div>
-                    
-                        <div rel="2" class="item">
-                            <a class="tt_project" href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180523110326-37af-0I4XNtd4.jpg", class: "avatar", alt: "Chợ Thu Lộ" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">Chợ Thu Lộ</a>
-                                <p>Đường Nguyễn Chánh, phường Trần Phú, Quảng Ngãi, Quảng Ngãi</p>
-                            </div>
-                        </div>
-                    
-                        <div rel="3" class="item">
-                            <a class="tt_project" href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522133946-484b-hmcVYWuR.jpg", class: "avatar", alt: "Khu đô thị Núi Long" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">Khu đô thị Núi Long</a>
-                                <p>Phường Đông Vệ, Thanh Hóa, Thanh Hóa</p>
-                            </div>
-                        </div>
-                    
-                        <div rel="4" class="item">
-                            <a class="tt_project" href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522114758-93b5-hmcVYWuR.jpg", class: "avatar", alt: "Anland 2" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">Anland 2</a>
-                                <p>Lô đất HH01, Đường Tố Hữu, Phường Dương Nội, Hà Đông, Hà Nội</p>
-                            </div>
-                        </div>
-                    
-                        <div rel="5" class="item act">
-                            <a class="tt_project" href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">
-                                <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522103159-a4f4-0I4XNtd4.jpg", class: "avatar", alt: "Thành Phố Cà Phê" %>
-                            </a>
-                            <div class="info_project">
-                                <a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">Thành Phố Cà Phê</a>
-                                <p>Đường Nguyễn Đình Chiểu, xã Tân Lợi, Buôn Ma Thuột, Đắk Lắk</p>
-                            </div>
-                        </div>
-                    
-            </div>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <script>
-        $(function () {
-            $("#sliderA").excoloSlider();
-        });
-    </script>
-
-</div>
-
-
-                <!--Lien ket noi bat-->
-                
-
-<div class="product-count">
-    <div class="pc-title">
-        <div class="pc-icon">
-            <%= image_tag "Images/icon-foruser.png", alt: "foruser" %>
-        </div>
-        <h3>Liên kết nổi bật</h3>
-    </div>
-    <div class="pc-content">
-        <ul id="ulBoxHotHome">
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-phu-nhuan.htm">Bán đất nền Quận Phú Nhuận</a></h4>
-            </li>
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-quan-9-tp-hcm.htm">Bán đất nền Quận 9</a></h4>
-            </li>
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-phuong-an-phu-dong-1.htm">Bán đất nền phường An Phú Đông</a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-binh-duong.htm">Bán đất nền Bình Dương</a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-ha-dong.htm">Bán chung cư Quận Hà Đông
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-quan-7.htm">Bán chung cư Quận 7
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-tan-uyen-bd.htm">Bán đất nền Huyện Tân Uyên
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-hoang-mai.htm">Bán chung cư Quận Hoàng Mai
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-lakeside-palace.htm">Đất nền Lakeside Palace
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-long-bien.htm">Bán chung cư quận Long Biên
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-ba-dinh.htm">Bán chung cư quận Ba Đình 
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-hai-ba-trung.htm">Bán chung cư Quận Hai Bà Trưng
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-binh-tan.htm">Bán chung cư quận Bình Tân
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-quan-12.htm">Bán đất nền Quận 12
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-cau-giay.htm">Bán chung cư Quận Cầu Giấy
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-quan-2.htm">Bán đất nền Quận 2
-                </a></h4>
-            </li>
-
-            <li>
-                <h4><a href="/ban-dat-nen-du-an-ben-cat-bd.htm">Bán đất nền Huyện Bến Cát
-                </a></h4>
-            </li>
-            <li>
-                <h4><a href="/ban-can-ho-chung-cu-thanh-xuan.htm">Bán chung cư Quận Thanh Xuân
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-dat-nen-du-an-phuong-tan-hung-thuan-1.htm">Bán đất nền phường Tân Hưng Thuận
-                </a></h4>
-            </li>
-
-            <li style="display: none">
-                <h4><a href="/ban-dat-nen-du-an-di-an-bd.htm">Bán đất nền Huyện Dĩ An
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-can-ho-chung-cu-nam-tu-liem.htm">Bán chung cư Quận Nam Từ Liêm
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-nha-biet-thu-lien-ke-phuong-phu-huu-2.htm">Bán liền kề phường Phú Hữu
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-dat-nen-du-an-thu-duc.htm">Bán đất nền Quận Thủ Đức
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-dat-nen-du-an-thuan-an-bd.htm">Bán đất nền Huyện Thuận An
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-dat-nen-du-an-bac-tu-liem.htm">Bán chung cư Quận Bắc Từ Liêm
-                </a></h4>
-            </li>
-            <li style="display: none">
-                <h4><a href="/ban-can-ho-chung-cu-thi-tran-cau-dien.htm">Bán chung cư Cầu Diễn 
-                </a></h4>
-            </li>
-
-
-        </ul>
-        <div class="pc-extra" id="showBoxhotHome">
-            <a href="javascript:showBoxHotHome();" rel="nofollow">
-                <%= image_tag "Images/xemtatca.png", alt: "SeeAll" %>
-            </a>
-        </div>
-    </div>
-</div>
-
-                <!-- Utility -->
-                
-<div class="utility">
-    <div class="utility-title">
-        <h3>Tính năng hỗ trợ</h3>
-    </div>
-    <div class="utility-content">
-        <ul>            
-           
-            <li class="lifengshui"><a rel="nofollow" href="javascript:" id="UtilityFengShui" class="fancybox.ajax">Xem phong thủy theo tuổi</a></li>
-            
-            <li class="laixuat"><a rel="nofollow" href="javascript:" id="UtilityInterest" class="fancybox.ajax">Tính lãi suất vay ngân hàng</a></li>
-            
-            <li class="vanban "><a rel="nofollow" href="/van-ban-nganh-xay-dung.htm">Văn bản ngành xây dựng</a></li>
-
-        </ul>
-        <div class="clear"></div>
-    </div>
-    <div class="clear"></div>
-</div>
-
-                <div id="ContentPlaceHolder1_BoxBXHLink_pnBoxLink">
-  
-    <div class="product-count">
-        <div class="pc-title">
-            <div class="pc-icon">
-                <%= image_tag "Images/icon-foruser.png", alt: "foruser" %>
-            </div>
-            <h3>Bạn quan tâm tới xe hơi?</h3>
-        </div>
-        <div class="pc-content">
-            <ul id="ulBoxHot">
-                
-                        <li>
-                            <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-hyundai-elantra-nam-2016" title="Hyundai Elantra 2016">Hyundai Elantra 2016</a></h4>
-                        </li>
-                    
-                        <li>
-                            <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-bmw-3-series" title="BMW 3 Series">BMW 3 Series</a></h4>
-                        </li>
-                    
-                        <li>
-                            <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-nissan-navara" title="Nissan Navara">Nissan Navara</a></h4>
-                        </li>
-                    
-                        <li>
-                            <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-kia-rondo" title="Kia Rondo">Kia Rondo</a></h4>
-                        </li>
-                    
-                        <li>
-                            <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-toyota-hai-duong" title="Toyota Hải Dương">Toyota Hải Dương</a></h4>
-                        </li>
-                    
-            </ul>
-        </div>
-    </div>
-
-</div>
-
-
-            </div>
-
-            
-            <!-- Content Left -->
-            <div class="content-left">
-                
-                <div id="ContentPlaceHolder1_pnProduct">
-  
-<div class="for-user">
-    <div class="title">
-        <h3>Tin rao mới nhất</h3>
-    </div>
-    <ul>
-        
-                <li onmouseover="checkButtonProductSave(this,'10972925')" onmouseout="checkButtonProductSaveOut(this,'10972925')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_0" href="/cho-thue-nha-mat-pho-duong-so-9-phuong-13-3/cho-thue-nha-mt-33-duong-so-9-p13-q6-4x16m-4-lau-8pnwc-pr10972925.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_0",title: "Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC", alt: "Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip1" title="Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC" href="/cho-thue-nha-mat-pho-duong-so-9-phuong-13-3/cho-thue-nha-mt-33-duong-so-9-p13-q6-4x16m-4-lau-8pnwc-pr10972925.htm">Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                21 Triệu/tháng
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                64&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Quận 6 - Hồ Chí Minh
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'10972925');" class="listProductSearch saveProductDetail" id="10972925">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11070275')" onmouseout="checkButtonProductSaveOut(this,'11070275')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_1" href="/ban-dat-duong-bui-thanh-khiet-xa-quy-duc/ban-nha-mat-pho-tai-duong-quoc-lo-50-xa-quy-duc-binh-chanh-tphcm-pr11070275.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/03/27/20180327150614-0a96.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_1",title:"Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM.", alt: "Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM." %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip1" title="Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM." href="/ban-dat-duong-bui-thanh-khiet-xa-quy-duc/ban-nha-mat-pho-tai-duong-quoc-lo-50-xa-quy-duc-binh-chanh-tphcm-pr11070275.htm">Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM.</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                400 Triệu
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                100&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Bình Chánh - Hồ Chí Minh
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11070275');" class="listProductSearch saveProductDetail" id="11070275">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11070274')" onmouseout="checkButtonProductSaveOut(this,'11070274')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_2" href="/ban-nha-rieng-duong-nguyen-duy-cung-phuong-12-8/ban-nha-rieng-tai-duong-nguyen-duy-cung-phuong-12-go-vap-ho-chi-minh-dien-tich-572m2-gia-4500-pr11070274.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_2",title: "Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 ", alt: "Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 " %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip1" title="Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 " href="/ban-nha-rieng-duong-nguyen-duy-cung-phuong-12-8/ban-nha-rieng-tai-duong-nguyen-duy-cung-phuong-12-go-vap-ho-chi-minh-dien-tich-572m2-gia-4500-pr11070274.htm">Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 </a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                4.5 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                57.2&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Gò Vấp - Hồ Chí Minh
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11070274');" class="listProductSearch saveProductDetail" id="11070274">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11070272')" onmouseout="checkButtonProductSaveOut(this,'11070272')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_3" href="/ban-nha-mat-pho-duong-ung-van-khiem-phuong-25/ban-nha-mat-tien-ung-van-khiem-qbt-xd-hamlung5-laust-gia-175-ty-pr11070272.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip1" title="Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" href="/ban-nha-mat-pho-duong-ung-van-khiem-phuong-25/ban-nha-mat-tien-ung-van-khiem-qbt-xd-hamlung5-laust-gia-175-ty-pr11070272.htm">Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                17.5 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                100&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Bình Thạnh - Hồ Chí Minh
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11070272');" class="listProductSearch saveProductDetail" id="11070272">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11024224')" onmouseout="checkButtonProductSaveOut(this,'11024224')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_4" href="/ban-nha-mat-pho-duong-doi-can-phuong-doi-can/nha-mat-duong-pho-doi-can-ba-dinh-dt-83m2-mt-6m-nam-sat-nga-tu-dac-dia-gia-24-ty-pr11024224.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Nhà mặt đường phố Đội Cấn, Ba Đình DT 83m2 MT 6m, nằm sát ngã tư đắc địa, giá 24 tỷ" href="/ban-nha-mat-pho-duong-doi-can-phuong-doi-can/nha-mat-duong-pho-doi-can-ba-dinh-dt-83m2-mt-6m-nam-sat-nga-tu-dac-dia-gia-24-ty-pr11024224.htm">Nhà mặt đường phố Đội Cấn, Ba Đình DT 83m2 MT 6m, nằm sát ngã tư đắc địa, giá 24 tỷ</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                24 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                83&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Ba Đình - Hà Nội
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11024224');" class="listProductSearch saveProductDetail" id="11024224">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11070277')" onmouseout="checkButtonProductSaveOut(this,'11070277')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_5" href="/ban-nha-mat-pho-duong-thu-khoa-huan-phuong-ben-thanh/ban-khach-san-mat-tien-duong-thu-khoa-huan-ham-9-lau-dang-cho-thue-300trthang-gia-70-ty-pr11070277.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Bán khách sạn mặt tiền đường Thủ Khoa Huân, hầm, 9 lầu, đang cho thuê 300tr/tháng, giá 70 tỷ" href="/ban-nha-mat-pho-duong-thu-khoa-huan-phuong-ben-thanh/ban-khach-san-mat-tien-duong-thu-khoa-huan-ham-9-lau-dang-cho-thue-300trthang-gia-70-ty-pr11070277.htm">Bán khách sạn mặt tiền đường Thủ Khoa Huân, hầm, 9 lầu, đang cho thuê 300tr/tháng, giá 70 tỷ</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                70 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                Không xác định
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Quận 1 - Hồ Chí Minh
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11070277');" class="listProductSearch saveProductDetail" id="11070277">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11050849')" onmouseout="checkButtonProductSaveOut(this,'11050849')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_6" href="/ban-nha-mat-pho-duong-cat-linh-phuong-cat-linh/trung-tam-ha-noi-ban-nha-mat-pho-dien-tich-135m2-x-8t-thang-may-pr11050849.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Trung tâm Hà Nội bán nhà mặt phố diện tích 135m2 x 8T, thang máy" href="/ban-nha-mat-pho-duong-cat-linh-phuong-cat-linh/trung-tam-ha-noi-ban-nha-mat-pho-dien-tich-135m2-x-8t-thang-may-pr11050849.htm">Trung tâm Hà Nội bán nhà mặt phố diện tích 135m2 x 8T, thang máy</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                67 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                135&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Đống Đa - Hà Nội
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11050849');" class="listProductSearch saveProductDetail" id="11050849">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11020026')" onmouseout="checkButtonProductSaveOut(this,'11020026')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_7" href="/ban-dat-nen-du-an-khu-do-thi-moi-hung-phu-can-tho/ban-nen-a9-duong-so-8-kdc-cong-an-gia-ban-1580-ty-so-do-lh0936443699-pr11020026.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Bán nền A9 - Đường Số 8 - KDC Công An - Giá bán: 1,58 tỷ sổ đỏ - LH: 0936443699" href="/ban-dat-nen-du-an-khu-do-thi-moi-hung-phu-can-tho/ban-nen-a9-duong-so-8-kdc-cong-an-gia-ban-1580-ty-so-do-lh0936443699-pr11020026.htm">Bán nền A9 - Đường Số 8 - KDC Công An - Giá bán: 1,58 tỷ sổ đỏ - LH: 0936443699</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                1.58 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                90&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Cái Răng - Cần Thơ
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11020026');" class="listProductSearch saveProductDetail" id="11020026">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11040589')" onmouseout="checkButtonProductSaveOut(this,'11040589')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_8" href="/ban-dat-nen-du-an-duong-so-14-phuong-hung-thanh/ban-5-nen-lien-ke-duong-so-14khu-dan-cu-hong-loan-5c-doi-dien-truong-mam-non-gia-ban-175-tr-pr11040589.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Bán 5 nền đất LK đường Số 14 - KDC Hồng Loan 5C - Đối diện trường mầm non - giá bán: 17,5tr/m2" href="/ban-dat-nen-du-an-duong-so-14-phuong-hung-thanh/ban-5-nen-lien-ke-duong-so-14khu-dan-cu-hong-loan-5c-doi-dien-truong-mam-non-gia-ban-175-tr-pr11040589.htm">Bán 5 nền đất LK đường Số 14 - KDC Hồng Loan 5C - Đối diện trường mầm non - giá bán: 17,5tr/m2</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                17.5 Triệu/m²
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                90&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Cái Răng - Cần Thơ
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11040589');" class="listProductSearch saveProductDetail" id="11040589">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-                <li onmouseover="checkButtonProductSave(this,'11044864')" onmouseout="checkButtonProductSaveOut(this,'11044864')">
-                    <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_9" href="/ban-dat-nen-du-an-duong-so-10-phuong-hung-thanh/ban-nen-dt-45-x-22-duong-so-10-kdc-dieu-hien-ke-ben-ks-willson-pr11044864.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
-                    <div class="desc">
-                        <h4>
-                            <a class="vip5" title="Bán đất nền DT: 4,5 x 22m đường Số 10 - KDC Diệu Hiền kế bên KS Willson" href="/ban-dat-nen-du-an-duong-so-10-phuong-hung-thanh/ban-nen-dt-45-x-22-duong-so-10-kdc-dieu-hien-ke-ben-ks-willson-pr11044864.htm">Bán đất nền DT: 4,5 x 22m đường Số 10 - KDC Diệu Hiền kế bên KS Willson</a></h4>
-                        <div class="other">
-                            <div class="price">
-                                <label>Giá<span>:</span></label>
-                                1.5 Tỷ
-                            </div>
-                            <div class="area">
-                                <label>Diện tích<span>:</span></label>
-                                99&nbsp;m²
-                            </div>
-                            <div class="location">
-                                <label>Vị trí<span>:</span></label>
-                                Cái Răng - Cần Thơ
-                            </div>
-                        </div>
-
-                        <a rel="nofollow" onclick="productSaved(this,'11044864');" class="listProductSearch saveProductDetail" id="11044864">Lưu tin</a>
-
-                        <span class="date">
-                            28/05/2018</span>
-                    </div>
-                </li>
-            
-    </ul>
-
-    <div class="extra">
-        
-        
-    </div>
-    <div class="extra-news">
-        <div class="extra-news-l">
-            Tin Nhà đất bán mới nhất:
-                            <span>
-                                <a href="/nha-dat-ban.htm" title="Trang 1">1</a>
-                                <a rel="nofollow" href="/nha-dat-ban/p2.htm" title="Trang 2">2</a>
-                                <a rel="nofollow" href="/nha-dat-ban/p3.htm" title="Trang 3">3</a>
-                                <a rel="nofollow" href="/nha-dat-ban/p4.htm" title="Trang 4">4</a>
-                                <a rel="nofollow" href="/nha-dat-ban/p5.htm" title="Trang 5">5</a>
-                            </span>
-        </div>
-        <div class="extra-news-r">
-            Tin Nhà đất cho thuê mới nhất:
-                            <span>
-                                <a href="/nha-dat-cho-thue.htm" title="Trang 1">1</a>
-                                <a rel="nofollow" href="/nha-dat-cho-thue/p2.htm" title="Trang 2">2</a>
-                                <a rel="nofollow" href="/nha-dat-cho-thue/p3.htm" title="Trang 3">3</a>
-                                <a rel="nofollow" href="/nha-dat-cho-thue/p4.htm" title="Trang 4">4</a>
-                                <a rel="nofollow" href="/nha-dat-cho-thue/p5.htm" title="Trang 5">5</a>
-                            </span>
-        </div>
-    </div>
-</div>
-
-</div>
-                <!-- Banner -->
-                
-                <div class="clear"></div>
-                <div class="home_fengshui">
-                    
-
-<div class="fengshui">
-    <div class="fengshui-title">
-        <h3><a href="/phong-thuy.htm" title="Phong thủy">Phong thủy</a></h3>
-    </div>
-    <div class="list_news">
-        
-        <div class="news-hot">
-            <a href="/phong-thuy/hay-vut-ngay-nhung-vat-dung-duoi-day-neu-khong-muon-huy-hoai-cuoc-hon-nhan-cua-ban-ar37588.htm" title="Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn">
-                <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/0Ln61R5F/20180528071019338324-7813.jpg", alt: "Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn" %>
-            </a>
-            <h4>
-                <a href="/phong-thuy/hay-vut-ngay-nhung-vat-dung-duoi-day-neu-khong-muon-huy-hoai-cuoc-hon-nhan-cua-ban-ar37588.htm" title="Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn">Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn</a>
-            </h4>
-        </div>
-        
-        <div class="list_top">
-            <ul>
-                
-                        <li>
-                            <a href="/phong-thuy/co-pham-phong-thuy-khong-khi-thiet-ke-bep-tren-san-thuong-ar37609.htm" title="Có phạm phong thuỷ không khi thiết kế bếp trên sân thượng?">Có phạm phong thuỷ không khi thiết kế bếp trên sân thượng?</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/phong-thuy/chuyen-gia-huong-dan-cach-tim-huong-phat-trien-tri-tue-tinh-theo-thap-can-ar37535.htm" title="Chuyên gia hướng dẫn cách tìm hướng phát triển trí tuệ tính theo thập can">Chuyên gia hướng dẫn cách tìm hướng phát triển trí tuệ tính theo thập can</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/phong-thuy/bai-tri-8-phuong-vi-trong-phong-khach-hop-phong-thuy-ar37516.htm" title="Bài trí 8 phương vị trong phòng khách hợp phong thủy">Bài trí 8 phương vị trong phòng khách hợp phong thủy</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/phong-thuy/cach-trang-tri-phong-ngu-hop-phong-thuy-cho-nguoi-tuoi-ngo-ar37477.htm" title="Cách trang trí phòng ngủ hợp phong thủy cho người tuổi Ngọ">Cách trang trí phòng ngủ hợp phong thủy cho người tuổi Ngọ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/phong-thuy/huong-dan-bai-tri-phong-ngu-cho-nguoi-tuoi-tuat-hop-phong-thuy-ar37476.htm" title="Hướng dẫn bài trí phòng ngủ cho người tuổi Tuất hợp phong thủy">Hướng dẫn bài trí phòng ngủ cho người tuổi Tuất hợp phong thủy</a>
-                        </li>
-                    
-            </ul>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
-
-                </div>
-                <div class="home_fengshui living_space">
-                    
-<div class="fengshui">
-    <div class="living-title">
-        <h3><a href="/khong-gian-song.htm" title="Không gian sống">Không gian sống</a></h3>
-    </div>
-    <div class="list_news">
-        
-        <div class="news-hot">
-            <a href="/khong-gian-song/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
-                <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/LeS0RvL7/n1-35ba.jpg", alt: "Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan" %>
-            </a>
-            <h4>
-                <a href="/khong-gian-song/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan</a>
-            </h4>
-        </div>
-        
-        <div class="list_top">
-            <ul>
-                
-                        <li>
-                            <a href="/khong-gian-song/ve-dep-hien-dai-cua-ngoi-nha-cu-ky-sau-cai-tao-ar37623.htm" title="Vẻ đẹp hiện đại của ngôi nhà cũ kỹ sau cải tạo">Vẻ đẹp hiện đại của ngôi nhà cũ kỹ sau cải tạo</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/khong-gian-song/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/khong-gian-song/ve-dep-ngo-ngang-cua-ngoi-nha-giam-gia-toi-7-lan-nhung-khong-co-nguoi-mua-ar37617.htm" title="Vẻ đẹp ngỡ ngàng của ngôi nhà giảm giá tới 7 lần nhưng không có người mua">Vẻ đẹp ngỡ ngàng của ngôi nhà giảm giá tới 7 lần nhưng không có người mua</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/khong-gian-song/song-hoa-hop-voi-thien-nhien-nho-phong-cach-eco-trong-thiet-ke-noi-that-ar37614.htm" title="Sống hòa hợp với thiên nhiên nhờ phong cách eco trong thiết kế nội thất">Sống hòa hợp với thiên nhiên nhờ phong cách eco trong thiết kế nội thất</a>
-                        </li>
-                    
-
-            </ul>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
-
-                </div>
-                <!-- I News -->
-                <div class="inews">
-                    
-<div class="inews-l">
-                        <div class="inews-l-title">
-                            <h3><a href="/tu-van-luat.htm" title="Tư vấn luật">Tư vấn luật</a></h3>
-                        </div>
-                        <div class="inews-l-content" style="height: 394px;">
-                            <div class="inews-l-content-hot">
-                                <a href="/tu-van-luat/mua-chung-cu-cho-lo-la-khau-phap-ly-ar37523.htm" title="Mua chung cư, chớ lơ là khâu pháp lý">
-                                    <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/24/iSSPmDsO/ply-khi-mua-nha-chun-e861.jpg", alt: "Mua chung cư, chớ lơ là khâu pháp lý" %>
-                                </a>
-                                <h3>
-                                    <a href="/tu-van-luat/mua-chung-cu-cho-lo-la-khau-phap-ly-ar37523.htm" title="Mua chung cư, chớ lơ là khâu pháp lý">Mua chung cư, chớ lơ là khâu pháp lý</a>
-                                </h3>
-                                
-                            </div>
-                            <div class="clear"></div>
-                            <ul>
-                                
-                                 <li><a href="/tu-van-luat/co-phai-nop-thue-thu-nhap-ca-nhan-2-lan-trong-truong-hop-uy-quyen-ban-dat-ar37618.htm" title="Có phải nộp thuế thu nhập cá nhân 2 lần trong trường hợp ủy quyền bán đất?">Có phải nộp thuế thu nhập cá nhân 2 lần trong trường hợp ủy quyền bán đất?</a></li>
-                                 
-                                 <li><a href="/tu-van-luat/tu-van-cach-dat-coc-tien-nha-an-toan-ar37546.htm" title="Tư vấn cách đặt cọc tiền nhà an toàn">Tư vấn cách đặt cọc tiền nhà an toàn</a></li>
-                                 
-                                 <li><a href="/tu-van-luat/quy-dinh-ve-ho-so-thu-tuc-chuyen-nhuong-dat-thuoc-dien-quy-hoach-ar37533.htm" title="Quy định về hồ sơ, thủ tục chuyển nhượng đất thuộc diện quy hoạch">Quy định về hồ sơ, thủ tục chuyển nhượng đất thuộc diện quy hoạch</a></li>
-                                 
-                            </ul>
-                            <div class="clear"></div>
-                        </div> 
-                    </div>
-
-
-                    
-<div class="inews-r">
-    <div class="inews-r-title">
-        <h3><a href="/thiet-ke-kien-truc.htm" title="Thiết kế kiến trúc">Thiết kế kiến trúc</a></h3>
-    </div>
-    <div class="inews-l-content" style="height: 394px;">
-        <div class="inews-l-content-hot">
-            <a href="/thiet-ke-kien-truc/cuoc-lot-xac-day-bat-ngo-cua-nha-kho-cu-ar37631.htm" title="Cuộc lột xác đầy bất ngờ của nhà kho cũ">
-                <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/JaqBX5WC/nha-kho-dd5c.jpg", alt: "Cuộc lột xác đầy bất ngờ của nhà kho cũ" %>
-            </a>
-            <h3>
-                <a href="/thiet-ke-kien-truc/cuoc-lot-xac-day-bat-ngo-cua-nha-kho-cu-ar37631.htm" title="Cuộc lột xác đầy bất ngờ của nhà kho cũ">Cuộc lột xác đầy bất ngờ của nhà kho cũ</a>
-            </h3>
-           
-        </div>
-        <div class="clear"></div>
-        <ul>
-            
-                    <li><a href="/thiet-ke-kien-truc/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ</a></li>
-                
-                    <li><a href="/thiet-ke-kien-truc/mau-nha-pho-3-tang-giup-bo-sung-nang-luong-tich-cuc-cho-nguoi-o-ar37619.htm" title="Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở">Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở</a></li>
-                
-                    <li><a href="/thiet-ke-kien-truc/thiet-ke-sang-tao-tu-10-mau-nha-mai-thai-2-tang-ar37616.htm" title="Thiết kế sáng tạo từ 10 mẫu nhà mái Thái 2 tầng">Thiết kế sáng tạo từ 10 mẫu nhà mái Thái 2 tầng</a></li>
-                
-        </ul>
-        <div class="clear"></div>
-    </div>
-</div>
-
-                </div>
-            </div>
-
-            <div class="clear"></div>
-            <div class="home-enews">
-                <a class="btnConfirm fancybox.ajax" id="BannerRegisterArticleEmail">Đăng ký</a>
-                <input name="ctl00$ContentPlaceHolder1$txtHomeEnewsEmail" type="text" id="txtHomeEnewsEmail" placeholder="Nhập địa chỉ email">
-
-            </div>
-        </div>
-    </div>
-    <!-- End Index Page -->
+         </div>
+      </div>
+      <div class="clear"></div>
+   </div>
    
-
-
+   <div class="clear"></div>
+   <!-- End Box Search -->
+   <!-- Index Page -->
+   <div class="index-page">
+      <div class="content">
+         <div class="news-default fl">
+            <div class="news-default-left" id="hothome_0" style="display: none;">
+               <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
+               <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/1-0de1.jpg", alt: "Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ" %>
+               </a>
+               <h2>
+                  <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
+                  Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ</a>
+               </h2>
+            </div>
+            <div class="news-default-left" id="hothome_1" style="display: none">
+               <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
+               <%= image_tag "https://img.dothi.net/2018/05/26/LeS0RvL7/h3-4628.jpg", alt: "Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4" %>
+               </a>
+               <h2>
+                  <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
+                  Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4</a>
+               </h2>
+            </div>
+            <div class="news-default-left" id="hothome_2" style="display: none">
+               <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
+               <%= image_tag "https://img.dothi.net/2018/05/28/LeS0RvL7/tp-d58b.jpg", alt: "" %>
+               </a>
+               <h2>
+                  <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
+                  "Điểm mặt" những nơi nên tránh khi mua nhà đất</a>
+               </h2>
+            </div>
+            <div class="news-default-left" id="hothome_3" style="display: block;">
+               <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
+               <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/7-ca9a.jpg", alt: "Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi" %>
+               </a>
+               <h2>
+                  <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
+                  Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi</a>
+               </h2>
+            </div>
+            <div class="news-default-left" id="hothome_4" style="display: none;">
+               <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
+               <%= image_tag "https://img.dothi.net/2018/05/28/LeS0RvL7/n1-35ba.jpg", alt: "Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan" %>
+               </a>
+               <h2>
+                  <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
+                  Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan</a>
+               </h2>
+            </div>
+            <div class="news-default-left" id="hothome_5" style="display: none;">
+               <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
+               <%= image_tag "https://img.dothi.net/2018/05/28/iSSPmDsO/8-5bb1.jpg", alt: "Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018" %>
+               </a>
+               <h2>
+                  <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
+                  Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018</a>
+               </h2>
+            </div>
+            <div class="news-default-right" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; height: 325px;">
+               <ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; height: 715px; top: -65px;">
+                  <li id="li_2" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
+                        Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_3" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
+                        Khám phá không gian sống cực quyến rũ trong ngôi nhà màu ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_4" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
+                        Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_5" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
+                        Văn phòng làm việc “nhà người ta” khiến ai cũng phải ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li class="first" id="li_0" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
+                        Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_1" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/cung-ban-dau-tu/diem-mat-nhung-noi-nen-tranh-khi-mua-nha-dat-ar37594.htm" title="" Điểm="" mặt"="" những="" nơi="" nên="" tránh="" khi="" mua="" nhà="" đất"="">
+                        "Điểm mặt" những nơi nên tránh khi mua nhà đất
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_2" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/nha-dep/cai-tao-nha-ong-sai-gon-toi-tam-thanh-khong-gian-song-thoang-sang-tien-nghi-ar37610.htm" title="Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống thoáng sáng, tiện nghi">
+                        Cải tạo nhà ống Sài Gòn tối tăm thành không gian sống ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_3" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/nha-dep/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
+                        Khám phá không gian sống cực quyến rũ trong ngôi nhà màu ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_4" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/noi-that/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">
+                        Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li id="li_5" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/kien-truc-bon-phuong/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">
+                        Văn phòng làm việc “nhà người ta” khiến ai cũng phải ...
+                        </a>
+                     </h3>
+                  </li>
+                  <li class="first" id="li_0" style="overflow: hidden; float: none; width: 226px; height: 46px;">
+                     <h3>
+                        <a href="/kien-truc-bon-phuong/ngoi-nha-2-tang-thoang-dep-an-minh-trong-vo-boc-cap-4-ar37576.htm" title="Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4">
+                        Ngôi nhà 2 tầng thoáng đẹp ẩn mình trong vỏ bọc cấp 4
+                        </a>
+                     </h3>
+                  </li>
+               </ul>
+            </div>
             <div class="clear">
             </div>
-        </div>
-        <!-- Footer -->
-        
+         </div>
+         <div class="most-read">
+            <div class="title">
+               <h3>
+                  Tin xem nhiều
+               </h3>
+            </div>
+            <ul>
+               <li class="first">
+                  <h4>
+                     <a href="/tin-thi-truong/horea-chua-co-kha-nang-xay-ra-bong-bong-bat-dong-san-ar37473.htm" title="HoREA: Chưa có khả năng xảy ra bong bóng bất động sản">
+                     HoREA: Chưa có khả năng xảy ra bong bóng bất động sản</a>
+                  </h4>
+               </li>
+               <li>
+                  <h4>
+                     <a href="/tin-du-an/tphcm-se-ban-dau-gia-200-can-ho-thuoc-khu-tai-dinh-cu-phu-my-ar37316.htm" title="Tp.HCM sẽ bán đấu giá 200 căn hộ thuộc Khu tái định cư Phú Mỹ">
+                     Tp.HCM sẽ bán đấu giá 200 căn hộ thuộc Khu tái định cư Phú Mỹ</a>
+                  </h4>
+               </li>
+               <li>
+                  <h4>
+                     <a href="/noi-that/diem-danh-nhung-phong-cach-thiet-ke-noi-that-noi-bat-trong-nam-2018-ar37494.htm" title="Điểm danh những phong cách thiết kế nội thất nổi bật trong năm 2018">
+                     Điểm danh những phong cách thiết kế nội thất nổi bật trong năm 2018</a>
+                  </h4>
+               </li>
+               <li>
+                  <h4>
+                     <a href="/nha-dep/cach-tang-view-cho-can-ho-56m2-ma-khong-ton-dien-tich-ar37483.htm" title="Cách tăng " view"="" cho="" căn="" hộ="" 56m2="" mà="" không="" tốn="" diện="" tích"="">
+                     Cách tăng "view" cho căn hộ 56m2 mà không tốn diện tích</a>
+                  </h4>
+               </li>
+               <li>
+                  <h4>
+                     <a href="/tu-van-thiet-ke/mau-nha-pho-3-tang-giup-bo-sung-nang-luong-tich-cuc-cho-nguoi-o-ar37619.htm" title="Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở">
+                     Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở</a>
+                  </h4>
+               </li>
+            </ul>
+         </div>
+         <div style="width: 658px; float: left">
+            <div class="mid-banner" id="Banner_KM_Mid_64">
+               <a href="/banner-click-64.htm?url=https://file.dothi.net/landingpage/gem-riverside/index.aspx#Home" rel="nofollow" target="_blank">
+               <%= image_tag "https://img.dothi.net/2018/05/17/20180517165738-a0f1.gif", alt: "Banner giữa - trang chủ - LuyenVT1" %>
+               </a>
+            </div>
+         </div>
+         
+         <!-- Content Right -->
+         <div class="content-right content-home">
+            <div id="ContentPlaceHolder1_ProjectHome_divProject" class="project-hl">
+               <div class="hl-title">
+                  <h3><a href="/du-an-bat-dong-san.htm" title="Dự án nổi bật">Dự án nổi bật</a></h3>
+               </div>
+               <div class="wr_project">
+                  <div class="wr_slide">
+                     <div class="slideproject">
+                        <div id="sliderA" class="slider" style="position: relative;">
+                           <div class="slide-dragcontainer" style="cursor: pointer;">
+                              <div class="slide-container" style="position: relative; width: 309px; overflow: hidden; height: 550px;">
+                                 <div class="slide-wrapper" style="position: relative; left: 0px; height: 550px; transition-duration: 500ms; transition-timing-function: linear; transform: translateX(-1545px);">
+                                    <div class="slide" style="position: absolute; top: 0px; left: 1854px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180525113252-a92f-0I4XNtd4.jpg", alt: "Central Bay Da Nang City" %>
+                                       </a>
+                                       <h4><a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">Central Bay Da Nang City</a></h4>
+                                       <p>Đường Nguyễn Tất Thành, Liên Chiểu, Đà Nẵng</p>
+                                    </div>
+                                    <div class="slide" style="position: absolute; top: 0px; left: 2163px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180523143055-5bbd-hmcVYWuR.jpg", alt: "Chung cư Sơn Thịnh 3" %>
+                                       </a>
+                                       <h4><a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">Chung cư Sơn Thịnh 3</a></h4>
+                                       <p>408A Đường Lê Hồng Phong, Phường Thắng Tam, Vũng Tàu, Bà Rịa Vũng Tàu</p>
+                                    </div>
+                                    <div class="slide" style="position: absolute; top: 0px; left: 618px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180523110326-37af-0I4XNtd4.jpg", alt: "Chợ Thu Lộ" %>
+                                       </a>
+                                       <h4><a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">Chợ Thu Lộ</a></h4>
+                                       <p>Đường Nguyễn Chánh, phường Trần Phú, Quảng Ngãi, Quảng Ngãi</p>
+                                    </div>
+                                    <div class="slide" style="position: absolute; top: 0px; left: 927px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522133946-484b-hmcVYWuR.jpg", alt: "Khu đô thị Núi Long" %>
+                                       </a>
+                                       <h4><a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">Khu đô thị Núi Long</a></h4>
+                                       <p>Phường Đông Vệ, Thanh Hóa, Thanh Hóa</p>
+                                    </div>
+                                    <div class="slide" style="position: absolute; top: 0px; left: 1236px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522114758-93b5-hmcVYWuR.jpg", alt: "Anland 2" %>
+                                       </a>
+                                       <h4><a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">Anland 2</a></h4>
+                                       <p>Lô đất HH01, Đường Tố Hữu, Phường Dương Nội, Hà Đông, Hà Nội</p>
+                                    </div>
+                                    <div class="slide es-active" style="position: absolute; top: 0px; left: 1545px; width: 309px; height: 549.564px; z-index: 10; display: block; backface-visibility: hidden;">
+                                       <a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">
+                                       <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_310_204_3.20180522103159-a4f4-0I4XNtd4.jpg", alt: "Thành Phố Cà Phê" %>
+                                       </a>
+                                       <h4><a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">Thành Phố Cà Phê</a></h4>
+                                       <p>Đường Nguyễn Đình Chiểu, xã Tân Lợi, Buôn Ma Thuột, Đắk Lắk</p>
+                                    </div>
+                                 </div>
+                                 <div class="slide-prev" style="display: none;"></div>
+                                 <div class="slide-next" style="display: none;"></div>
+                              </div>
+                           </div>
+                           <ul class="es-pager">
+                              <li rel="0" class=""></li>
+                              <li rel="1" class=""></li>
+                              <li rel="2" class=""></li>
+                              <li rel="3" class=""></li>
+                              <li rel="4" class=""></li>
+                              <li rel="5" class="act"></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="thumbSlide">
+                     <div class="listproject">
+                        <div rel="0" class="item first">
+                           <a class="tt_project" href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180525113252-a92f-0I4XNtd4.jpg", class: "avatar", alt: "Central Bay Da Nang City" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/khu-do-thi-moi-lien-chieu/central-bay-da-nang-city-pj3521.htm" title="Central Bay Da Nang City">Central Bay Da Nang City</a>
+                              <p>Đường Nguyễn Tất Thành, Liên Chiểu, Đà Nẵng</p>
+                           </div>
+                        </div>
+                        <div rel="1" class="item">
+                           <a class="tt_project" href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180523143055-5bbd-hmcVYWuR.jpg", class: "avatar", alt: "Chung cư Sơn Thịnh 3" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/khu-can-ho-vung-tau/chung-cu-son-thinh-3-pj3519.htm" title="Chung cư Sơn Thịnh 3">Chung cư Sơn Thịnh 3</a>
+                              <p>408A Đường Lê Hồng Phong, Phường Thắng Tam, Vũng Tàu, Bà Rịa Vũng Tàu</p>
+                           </div>
+                        </div>
+                        <div rel="2" class="item">
+                           <a class="tt_project" href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180523110326-37af-0I4XNtd4.jpg", class: "avatar", alt: "Chợ Thu Lộ" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/du-an-khac-quang-ngai/cho-thu-lo-pj3518.htm" title="Chợ Thu Lộ">Chợ Thu Lộ</a>
+                              <p>Đường Nguyễn Chánh, phường Trần Phú, Quảng Ngãi, Quảng Ngãi</p>
+                           </div>
+                        </div>
+                        <div rel="3" class="item">
+                           <a class="tt_project" href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522133946-484b-hmcVYWuR.jpg", class: "avatar", alt: "Khu đô thị Núi Long" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/khu-do-thi-moi-thanh-hoa/khu-do-thi-nui-long-pj3515.htm" title="Khu đô thị Núi Long">Khu đô thị Núi Long</a>
+                              <p>Phường Đông Vệ, Thanh Hóa, Thanh Hóa</p>
+                           </div>
+                        </div>
+                        <div rel="4" class="item">
+                           <a class="tt_project" href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522114758-93b5-hmcVYWuR.jpg", class: "avatar", alt: "Anland 2" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/khu-can-ho-ha-dong/anland-2-pj3514.htm" title="Anland 2">Anland 2</a>
+                              <p>Lô đất HH01, Đường Tố Hữu, Phường Dương Nội, Hà Đông, Hà Nội</p>
+                           </div>
+                        </div>
+                        <div rel="5" class="item act">
+                           <a class="tt_project" href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">
+                           <%= image_tag "https://img2.dothi.net/dothi_svr_1_crop_104_69_3.20180522103159-a4f4-0I4XNtd4.jpg", class: "avatar", alt: "Thành Phố Cà Phê" %>
+                           </a>
+                           <div class="info_project">
+                              <a href="/khu-do-thi-moi-buon-ma-thuot/thanh-pho-ca-phe-pj3513.htm" title="Thành Phố Cà Phê">Thành Phố Cà Phê</a>
+                              <p>Đường Nguyễn Đình Chiểu, xã Tân Lợi, Buôn Ma Thuột, Đắk Lắk</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="clear"></div>
+               </div>
+               <script>
+                  $(function () {
+                      $("#sliderA").excoloSlider();
+                  });
+               </script>
+            </div>
+            <!--Lien ket noi bat-->
+            <div class="product-count">
+               <div class="pc-title">
+                  <div class="pc-icon">
+                     <%= image_tag "Images/icon-foruser.png", alt: "foruser" %>
+                  </div>
+                  <h3>Liên kết nổi bật</h3>
+               </div>
+               <div class="pc-content">
+                  <ul id="ulBoxHotHome">
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-phu-nhuan.htm">Bán đất nền Quận Phú Nhuận</a></h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-quan-9-tp-hcm.htm">Bán đất nền Quận 9</a></h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-phuong-an-phu-dong-1.htm">Bán đất nền phường An Phú Đông</a></h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-binh-duong.htm">Bán đất nền Bình Dương</a></h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-ha-dong.htm">Bán chung cư Quận Hà Đông
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-quan-7.htm">Bán chung cư Quận 7
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-tan-uyen-bd.htm">Bán đất nền Huyện Tân Uyên
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-hoang-mai.htm">Bán chung cư Quận Hoàng Mai
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-lakeside-palace.htm">Đất nền Lakeside Palace
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-long-bien.htm">Bán chung cư quận Long Biên
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-ba-dinh.htm">Bán chung cư quận Ba Đình 
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-hai-ba-trung.htm">Bán chung cư Quận Hai Bà Trưng
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-binh-tan.htm">Bán chung cư quận Bình Tân
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-quan-12.htm">Bán đất nền Quận 12
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-cau-giay.htm">Bán chung cư Quận Cầu Giấy
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-quan-2.htm">Bán đất nền Quận 2
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-dat-nen-du-an-ben-cat-bd.htm">Bán đất nền Huyện Bến Cát
+                           </a>
+                        </h4>
+                     </li>
+                     <li>
+                        <h4><a href="/ban-can-ho-chung-cu-thanh-xuan.htm">Bán chung cư Quận Thanh Xuân
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-dat-nen-du-an-phuong-tan-hung-thuan-1.htm">Bán đất nền phường Tân Hưng Thuận
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-dat-nen-du-an-di-an-bd.htm">Bán đất nền Huyện Dĩ An
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-can-ho-chung-cu-nam-tu-liem.htm">Bán chung cư Quận Nam Từ Liêm
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-nha-biet-thu-lien-ke-phuong-phu-huu-2.htm">Bán liền kề phường Phú Hữu
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-dat-nen-du-an-thu-duc.htm">Bán đất nền Quận Thủ Đức
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-dat-nen-du-an-thuan-an-bd.htm">Bán đất nền Huyện Thuận An
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-dat-nen-du-an-bac-tu-liem.htm">Bán chung cư Quận Bắc Từ Liêm
+                           </a>
+                        </h4>
+                     </li>
+                     <li style="display: none">
+                        <h4><a href="/ban-can-ho-chung-cu-thi-tran-cau-dien.htm">Bán chung cư Cầu Diễn 
+                           </a>
+                        </h4>
+                     </li>
+                  </ul>
+                  <div class="pc-extra" id="showBoxhotHome">
+                     <a href="javascript:showBoxHotHome();" rel="nofollow">
+                     <%= image_tag "Images/xemtatca.png", alt: "SeeAll" %>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- Utility -->
+            <div class="utility">
+               <div class="utility-title">
+                  <h3>Tính năng hỗ trợ</h3>
+               </div>
+               <div class="utility-content">
+                  <ul>
+                     <li class="lifengshui"><a rel="nofollow" href="javascript:" id="UtilityFengShui" class="fancybox.ajax">Xem phong thủy theo tuổi</a></li>
+                     <li class="laixuat"><a rel="nofollow" href="javascript:" id="UtilityInterest" class="fancybox.ajax">Tính lãi suất vay ngân hàng</a></li>
+                     <li class="vanban "><a rel="nofollow" href="/van-ban-nganh-xay-dung.htm">Văn bản ngành xây dựng</a></li>
+                  </ul>
+                  <div class="clear"></div>
+               </div>
+               <div class="clear"></div>
+            </div>
+            <div id="ContentPlaceHolder1_BoxBXHLink_pnBoxLink">
+               <div class="product-count">
+                  <div class="pc-title">
+                     <div class="pc-icon">
+                        <%= image_tag "Images/icon-foruser.png", alt: "foruser" %>
+                     </div>
+                     <h3>Bạn quan tâm tới xe hơi?</h3>
+                  </div>
+                  <div class="pc-content">
+                     <ul id="ulBoxHot">
+                        <li>
+                           <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-hyundai-elantra-nam-2016" title="Hyundai Elantra 2016">Hyundai Elantra 2016</a></h4>
+                        </li>
+                        <li>
+                           <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-bmw-3-series" title="BMW 3 Series">BMW 3 Series</a></h4>
+                        </li>
+                        <li>
+                           <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-nissan-navara" title="Nissan Navara">Nissan Navara</a></h4>
+                        </li>
+                        <li>
+                           <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-kia-rondo" title="Kia Rondo">Kia Rondo</a></h4>
+                        </li>
+                        <li>
+                           <h4><a rel="nofollow" target="_blank" href="https://banxehoi.com/xe-toyota-hai-duong" title="Toyota Hải Dương">Toyota Hải Dương</a></h4>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Content Left -->
+         <div class="content-left">
+            <div id="ContentPlaceHolder1_pnProduct">
+               <div class="for-user">
+                  <div class="title">
+                     <h3>Tin rao mới nhất</h3>
+                  </div>
+                  <ul>
+                     <li onmouseover="checkButtonProductSave(this,'10972925')" onmouseout="checkButtonProductSaveOut(this,'10972925')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_0" href="/cho-thue-nha-mat-pho-duong-so-9-phuong-13-3/cho-thue-nha-mt-33-duong-so-9-p13-q6-4x16m-4-lau-8pnwc-pr10972925.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_0",title: "Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC", alt: "Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip1" title="Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC" href="/cho-thue-nha-mat-pho-duong-so-9-phuong-13-3/cho-thue-nha-mt-33-duong-so-9-p13-q6-4x16m-4-lau-8pnwc-pr10972925.htm">Cho thuê nhà MT 33 đường Số 9, P. 13, Q. 6, 4x16m, 4 lầu, 8PN+WC</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 21 Triệu/tháng
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 64&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Quận 6 - Hồ Chí Minh
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'10972925');" class="listProductSearch saveProductDetail" id="10972925">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11070275')" onmouseout="checkButtonProductSaveOut(this,'11070275')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_1" href="/ban-dat-duong-bui-thanh-khiet-xa-quy-duc/ban-nha-mat-pho-tai-duong-quoc-lo-50-xa-quy-duc-binh-chanh-tphcm-pr11070275.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/03/27/20180327150614-0a96.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_1",title:"Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM.", alt: "Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM." %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip1" title="Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM." href="/ban-dat-duong-bui-thanh-khiet-xa-quy-duc/ban-nha-mat-pho-tai-duong-quoc-lo-50-xa-quy-duc-binh-chanh-tphcm-pr11070275.htm">Bán đất tại đường Bùi Thanh Khiết, xã Quy Đức, Bình Chánh, Tp. HCM.</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 400 Triệu
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 100&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Bình Chánh - Hồ Chí Minh
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11070275');" class="listProductSearch saveProductDetail" id="11070275">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11070274')" onmouseout="checkButtonProductSaveOut(this,'11070274')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_2" href="/ban-nha-rieng-duong-nguyen-duy-cung-phuong-12-8/ban-nha-rieng-tai-duong-nguyen-duy-cung-phuong-12-go-vap-ho-chi-minh-dien-tich-572m2-gia-4500-pr11070274.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_2",title: "Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 ", alt: "Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 " %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip1" title="Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 " href="/ban-nha-rieng-duong-nguyen-duy-cung-phuong-12-8/ban-nha-rieng-tai-duong-nguyen-duy-cung-phuong-12-go-vap-ho-chi-minh-dien-tich-572m2-gia-4500-pr11070274.htm">Bán nhà riêng tại Đường Nguyễn Duy Cung, Phường 12, Gò Vấp, Hồ Chí Minh diện tích 57.2m2 giá 4.500 </a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 4.5 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 57.2&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Gò Vấp - Hồ Chí Minh
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11070274');" class="listProductSearch saveProductDetail" id="11070274">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11070272')" onmouseout="checkButtonProductSaveOut(this,'11070272')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_3" href="/ban-nha-mat-pho-duong-ung-van-khiem-phuong-25/ban-nha-mat-tien-ung-van-khiem-qbt-xd-hamlung5-laust-gia-175-ty-pr11070272.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip1" title="Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" href="/ban-nha-mat-pho-duong-ung-van-khiem-phuong-25/ban-nha-mat-tien-ung-van-khiem-qbt-xd-hamlung5-laust-gia-175-ty-pr11070272.htm">Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 17.5 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 100&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Bình Thạnh - Hồ Chí Minh
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11070272');" class="listProductSearch saveProductDetail" id="11070272">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11024224')" onmouseout="checkButtonProductSaveOut(this,'11024224')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_4" href="/ban-nha-mat-pho-duong-doi-can-phuong-doi-can/nha-mat-duong-pho-doi-can-ba-dinh-dt-83m2-mt-6m-nam-sat-nga-tu-dac-dia-gia-24-ty-pr11024224.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Nhà mặt đường phố Đội Cấn, Ba Đình DT 83m2 MT 6m, nằm sát ngã tư đắc địa, giá 24 tỷ" href="/ban-nha-mat-pho-duong-doi-can-phuong-doi-can/nha-mat-duong-pho-doi-can-ba-dinh-dt-83m2-mt-6m-nam-sat-nga-tu-dac-dia-gia-24-ty-pr11024224.htm">Nhà mặt đường phố Đội Cấn, Ba Đình DT 83m2 MT 6m, nằm sát ngã tư đắc địa, giá 24 tỷ</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 24 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 83&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Ba Đình - Hà Nội
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11024224');" class="listProductSearch saveProductDetail" id="11024224">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11070277')" onmouseout="checkButtonProductSaveOut(this,'11070277')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_5" href="/ban-nha-mat-pho-duong-thu-khoa-huan-phuong-ben-thanh/ban-khach-san-mat-tien-duong-thu-khoa-huan-ham-9-lau-dang-cho-thue-300trthang-gia-70-ty-pr11070277.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Bán khách sạn mặt tiền đường Thủ Khoa Huân, hầm, 9 lầu, đang cho thuê 300tr/tháng, giá 70 tỷ" href="/ban-nha-mat-pho-duong-thu-khoa-huan-phuong-ben-thanh/ban-khach-san-mat-tien-duong-thu-khoa-huan-ham-9-lau-dang-cho-thue-300trthang-gia-70-ty-pr11070277.htm">Bán khách sạn mặt tiền đường Thủ Khoa Huân, hầm, 9 lầu, đang cho thuê 300tr/tháng, giá 70 tỷ</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 70 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 Không xác định
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Quận 1 - Hồ Chí Minh
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11070277');" class="listProductSearch saveProductDetail" id="11070277">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11050849')" onmouseout="checkButtonProductSaveOut(this,'11050849')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_6" href="/ban-nha-mat-pho-duong-cat-linh-phuong-cat-linh/trung-tam-ha-noi-ban-nha-mat-pho-dien-tich-135m2-x-8t-thang-may-pr11050849.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Trung tâm Hà Nội bán nhà mặt phố diện tích 135m2 x 8T, thang máy" href="/ban-nha-mat-pho-duong-cat-linh-phuong-cat-linh/trung-tam-ha-noi-ban-nha-mat-pho-dien-tich-135m2-x-8t-thang-may-pr11050849.htm">Trung tâm Hà Nội bán nhà mặt phố diện tích 135m2 x 8T, thang máy</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 67 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 135&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Đống Đa - Hà Nội
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11050849');" class="listProductSearch saveProductDetail" id="11050849">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11020026')" onmouseout="checkButtonProductSaveOut(this,'11020026')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_7" href="/ban-dat-nen-du-an-khu-do-thi-moi-hung-phu-can-tho/ban-nen-a9-duong-so-8-kdc-cong-an-gia-ban-1580-ty-so-do-lh0936443699-pr11020026.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Bán nền A9 - Đường Số 8 - KDC Công An - Giá bán: 1,58 tỷ sổ đỏ - LH: 0936443699" href="/ban-dat-nen-du-an-khu-do-thi-moi-hung-phu-can-tho/ban-nen-a9-duong-so-8-kdc-cong-an-gia-ban-1580-ty-so-do-lh0936443699-pr11020026.htm">Bán nền A9 - Đường Số 8 - KDC Công An - Giá bán: 1,58 tỷ sổ đỏ - LH: 0936443699</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 1.58 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 90&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Cái Răng - Cần Thơ
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11020026');" class="listProductSearch saveProductDetail" id="11020026">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11040589')" onmouseout="checkButtonProductSaveOut(this,'11040589')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_8" href="/ban-dat-nen-du-an-duong-so-14-phuong-hung-thanh/ban-5-nen-lien-ke-duong-so-14khu-dan-cu-hong-loan-5c-doi-dien-truong-mam-non-gia-ban-175-tr-pr11040589.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Bán 5 nền đất LK đường Số 14 - KDC Hồng Loan 5C - Đối diện trường mầm non - giá bán: 17,5tr/m2" href="/ban-dat-nen-du-an-duong-so-14-phuong-hung-thanh/ban-5-nen-lien-ke-duong-so-14khu-dan-cu-hong-loan-5c-doi-dien-truong-mam-non-gia-ban-175-tr-pr11040589.htm">Bán 5 nền đất LK đường Số 14 - KDC Hồng Loan 5C - Đối diện trường mầm non - giá bán: 17,5tr/m2</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 17.5 Triệu/m²
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 90&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Cái Răng - Cần Thơ
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11040589');" class="listProductSearch saveProductDetail" id="11040589">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                     <li onmouseover="checkButtonProductSave(this,'11044864')" onmouseout="checkButtonProductSaveOut(this,'11044864')">
+                        <a id="ContentPlaceHolder1_ctl00_rptNewProducts_hplAvatar_9" href="/ban-dat-nen-du-an-duong-so-10-phuong-hung-thanh/ban-nen-dt-45-x-22-duong-so-10-kdc-dieu-hien-ke-ben-ks-willson-pr11044864.htm"><%= image_tag "https://img.dothi.net/crop/170x115/2018/05/28/20180528180955-0e08_wm.jpg", id: "ContentPlaceHolder1_ctl00_rptNewProducts_imgAvatar_3",title: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ", alt: "Bán nhà mặt tiền Ung Văn Khiêm, XD hầm, lửng, 5 lầu, ST giá 17,5 tỷ" %></a>
+                        <div class="desc">
+                           <h4>
+                              <a class="vip5" title="Bán đất nền DT: 4,5 x 22m đường Số 10 - KDC Diệu Hiền kế bên KS Willson" href="/ban-dat-nen-du-an-duong-so-10-phuong-hung-thanh/ban-nen-dt-45-x-22-duong-so-10-kdc-dieu-hien-ke-ben-ks-willson-pr11044864.htm">Bán đất nền DT: 4,5 x 22m đường Số 10 - KDC Diệu Hiền kế bên KS Willson</a>
+                           </h4>
+                           <div class="other">
+                              <div class="price">
+                                 <label>Giá<span>:</span></label>
+                                 1.5 Tỷ
+                              </div>
+                              <div class="area">
+                                 <label>Diện tích<span>:</span></label>
+                                 99&nbsp;m²
+                              </div>
+                              <div class="location">
+                                 <label>Vị trí<span>:</span></label>
+                                 Cái Răng - Cần Thơ
+                              </div>
+                           </div>
+                           <a rel="nofollow" onclick="productSaved(this,'11044864');" class="listProductSearch saveProductDetail" id="11044864">Lưu tin</a>
+                           <span class="date">
+                           28/05/2018</span>
+                        </div>
+                     </li>
+                  </ul>
+                  <div class="extra">
+                  </div>
+                  <div class="extra-news">
+                     <div class="extra-news-l">
+                        Tin Nhà đất bán mới nhất:
+                        <span>
+                        <a href="/nha-dat-ban.htm" title="Trang 1">1</a>
+                        <a rel="nofollow" href="/nha-dat-ban/p2.htm" title="Trang 2">2</a>
+                        <a rel="nofollow" href="/nha-dat-ban/p3.htm" title="Trang 3">3</a>
+                        <a rel="nofollow" href="/nha-dat-ban/p4.htm" title="Trang 4">4</a>
+                        <a rel="nofollow" href="/nha-dat-ban/p5.htm" title="Trang 5">5</a>
+                        </span>
+                     </div>
+                     <div class="extra-news-r">
+                        Tin Nhà đất cho thuê mới nhất:
+                        <span>
+                        <a href="/nha-dat-cho-thue.htm" title="Trang 1">1</a>
+                        <a rel="nofollow" href="/nha-dat-cho-thue/p2.htm" title="Trang 2">2</a>
+                        <a rel="nofollow" href="/nha-dat-cho-thue/p3.htm" title="Trang 3">3</a>
+                        <a rel="nofollow" href="/nha-dat-cho-thue/p4.htm" title="Trang 4">4</a>
+                        <a rel="nofollow" href="/nha-dat-cho-thue/p5.htm" title="Trang 5">5</a>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Banner -->
+            <div class="clear"></div>
+            <div class="home_fengshui">
+               <div class="fengshui">
+                  <div class="fengshui-title">
+                     <h3><a href="/phong-thuy.htm" title="Phong thủy">Phong thủy</a></h3>
+                  </div>
+                  <div class="list_news">
+                     <div class="news-hot">
+                        <a href="/phong-thuy/hay-vut-ngay-nhung-vat-dung-duoi-day-neu-khong-muon-huy-hoai-cuoc-hon-nhan-cua-ban-ar37588.htm" title="Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn">
+                        <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/0Ln61R5F/20180528071019338324-7813.jpg", alt: "Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn" %>
+                        </a>
+                        <h4>
+                           <a href="/phong-thuy/hay-vut-ngay-nhung-vat-dung-duoi-day-neu-khong-muon-huy-hoai-cuoc-hon-nhan-cua-ban-ar37588.htm" title="Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn">Hãy vứt ngay những vật dụng dưới đây nếu không muốn hủy hoại cuộc hôn nhân của bạn</a>
+                        </h4>
+                     </div>
+                     <div class="list_top">
+                        <ul>
+                           <li>
+                              <a href="/phong-thuy/co-pham-phong-thuy-khong-khi-thiet-ke-bep-tren-san-thuong-ar37609.htm" title="Có phạm phong thuỷ không khi thiết kế bếp trên sân thượng?">Có phạm phong thuỷ không khi thiết kế bếp trên sân thượng?</a>
+                           </li>
+                           <li>
+                              <a href="/phong-thuy/chuyen-gia-huong-dan-cach-tim-huong-phat-trien-tri-tue-tinh-theo-thap-can-ar37535.htm" title="Chuyên gia hướng dẫn cách tìm hướng phát triển trí tuệ tính theo thập can">Chuyên gia hướng dẫn cách tìm hướng phát triển trí tuệ tính theo thập can</a>
+                           </li>
+                           <li>
+                              <a href="/phong-thuy/bai-tri-8-phuong-vi-trong-phong-khach-hop-phong-thuy-ar37516.htm" title="Bài trí 8 phương vị trong phòng khách hợp phong thủy">Bài trí 8 phương vị trong phòng khách hợp phong thủy</a>
+                           </li>
+                           <li>
+                              <a href="/phong-thuy/cach-trang-tri-phong-ngu-hop-phong-thuy-cho-nguoi-tuoi-ngo-ar37477.htm" title="Cách trang trí phòng ngủ hợp phong thủy cho người tuổi Ngọ">Cách trang trí phòng ngủ hợp phong thủy cho người tuổi Ngọ</a>
+                           </li>
+                           <li>
+                              <a href="/phong-thuy/huong-dan-bai-tri-phong-ngu-cho-nguoi-tuoi-tuat-hop-phong-thuy-ar37476.htm" title="Hướng dẫn bài trí phòng ngủ cho người tuổi Tuất hợp phong thủy">Hướng dẫn bài trí phòng ngủ cho người tuổi Tuất hợp phong thủy</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="home_fengshui living_space">
+               <div class="fengshui">
+                  <div class="living-title">
+                     <h3><a href="/khong-gian-song.htm" title="Không gian sống">Không gian sống</a></h3>
+                  </div>
+                  <div class="list_news">
+                     <div class="news-hot">
+                        <a href="/khong-gian-song/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">
+                        <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/LeS0RvL7/n1-35ba.jpg", alt: "Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan" %>
+                        </a>
+                        <h4>
+                           <a href="/khong-gian-song/kham-pha-khong-gian-song-cuc-quyen-ru-trong-ngoi-nha-mau-xanh-matcha-o-dai-loan-ar37613.htm" title="Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan">Khám phá không gian sống cực quyến rũ trong ngôi nhà màu xanh matcha ở Đài Loan</a>
+                        </h4>
+                     </div>
+                     <div class="list_top">
+                        <ul>
+                           <li>
+                              <a href="/khong-gian-song/ve-dep-hien-dai-cua-ngoi-nha-cu-ky-sau-cai-tao-ar37623.htm" title="Vẻ đẹp hiện đại của ngôi nhà cũ kỹ sau cải tạo">Vẻ đẹp hiện đại của ngôi nhà cũ kỹ sau cải tạo</a>
+                           </li>
+                           <li>
+                              <a href="/khong-gian-song/nhung-mau-noi-that-duong-dai-dep-xuat-sac-tai-tuan-le-thiet-ke-milan-2018-ar37622.htm" title="Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018">Những mẫu nội thất đương đại đẹp xuất sắc tại Tuần lễ thiết kế Milan 2018</a>
+                           </li>
+                           <li>
+                              <a href="/khong-gian-song/ve-dep-ngo-ngang-cua-ngoi-nha-giam-gia-toi-7-lan-nhung-khong-co-nguoi-mua-ar37617.htm" title="Vẻ đẹp ngỡ ngàng của ngôi nhà giảm giá tới 7 lần nhưng không có người mua">Vẻ đẹp ngỡ ngàng của ngôi nhà giảm giá tới 7 lần nhưng không có người mua</a>
+                           </li>
+                           <li>
+                              <a href="/khong-gian-song/song-hoa-hop-voi-thien-nhien-nho-phong-cach-eco-trong-thiet-ke-noi-that-ar37614.htm" title="Sống hòa hợp với thiên nhiên nhờ phong cách eco trong thiết kế nội thất">Sống hòa hợp với thiên nhiên nhờ phong cách eco trong thiết kế nội thất</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+            <!-- I News -->
+            <div class="inews">
+               <div class="inews-l">
+                  <div class="inews-l-title">
+                     <h3><a href="/tu-van-luat.htm" title="Tư vấn luật">Tư vấn luật</a></h3>
+                  </div>
+                  <div class="inews-l-content" style="height: 394px;">
+                     <div class="inews-l-content-hot">
+                        <a href="/tu-van-luat/mua-chung-cu-cho-lo-la-khau-phap-ly-ar37523.htm" title="Mua chung cư, chớ lơ là khâu pháp lý">
+                        <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/24/iSSPmDsO/ply-khi-mua-nha-chun-e861.jpg", alt: "Mua chung cư, chớ lơ là khâu pháp lý" %>
+                        </a>
+                        <h3>
+                           <a href="/tu-van-luat/mua-chung-cu-cho-lo-la-khau-phap-ly-ar37523.htm" title="Mua chung cư, chớ lơ là khâu pháp lý">Mua chung cư, chớ lơ là khâu pháp lý</a>
+                        </h3>
+                     </div>
+                     <div class="clear"></div>
+                     <ul>
+                        <li><a href="/tu-van-luat/co-phai-nop-thue-thu-nhap-ca-nhan-2-lan-trong-truong-hop-uy-quyen-ban-dat-ar37618.htm" title="Có phải nộp thuế thu nhập cá nhân 2 lần trong trường hợp ủy quyền bán đất?">Có phải nộp thuế thu nhập cá nhân 2 lần trong trường hợp ủy quyền bán đất?</a></li>
+                        <li><a href="/tu-van-luat/tu-van-cach-dat-coc-tien-nha-an-toan-ar37546.htm" title="Tư vấn cách đặt cọc tiền nhà an toàn">Tư vấn cách đặt cọc tiền nhà an toàn</a></li>
+                        <li><a href="/tu-van-luat/quy-dinh-ve-ho-so-thu-tuc-chuyen-nhuong-dat-thuoc-dien-quy-hoach-ar37533.htm" title="Quy định về hồ sơ, thủ tục chuyển nhượng đất thuộc diện quy hoạch">Quy định về hồ sơ, thủ tục chuyển nhượng đất thuộc diện quy hoạch</a></li>
+                     </ul>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+               <div class="inews-r">
+                  <div class="inews-r-title">
+                     <h3><a href="/thiet-ke-kien-truc.htm" title="Thiết kế kiến trúc">Thiết kế kiến trúc</a></h3>
+                  </div>
+                  <div class="inews-l-content" style="height: 394px;">
+                     <div class="inews-l-content-hot">
+                        <a href="/thiet-ke-kien-truc/cuoc-lot-xac-day-bat-ngo-cua-nha-kho-cu-ar37631.htm" title="Cuộc lột xác đầy bất ngờ của nhà kho cũ">
+                        <%= image_tag "https://img.dothi.net/crop/310x204//2018/05/28/JaqBX5WC/nha-kho-dd5c.jpg", alt: "Cuộc lột xác đầy bất ngờ của nhà kho cũ" %>
+                        </a>
+                        <h3>
+                           <a href="/thiet-ke-kien-truc/cuoc-lot-xac-day-bat-ngo-cua-nha-kho-cu-ar37631.htm" title="Cuộc lột xác đầy bất ngờ của nhà kho cũ">Cuộc lột xác đầy bất ngờ của nhà kho cũ</a>
+                        </h3>
+                     </div>
+                     <div class="clear"></div>
+                     <ul>
+                        <li><a href="/thiet-ke-kien-truc/van-phong-lam-viec-nha-nguoi-ta-khien-ai-cung-phai-ghen-ty-ar37628.htm" title="Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ">Văn phòng làm việc “nhà người ta” khiến ai cũng phải ghen tỵ</a></li>
+                        <li><a href="/thiet-ke-kien-truc/mau-nha-pho-3-tang-giup-bo-sung-nang-luong-tich-cuc-cho-nguoi-o-ar37619.htm" title="Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở">Mẫu nhà phố 3 tầng giúp bổ sung năng lượng tích cực cho người ở</a></li>
+                        <li><a href="/thiet-ke-kien-truc/thiet-ke-sang-tao-tu-10-mau-nha-mai-thai-2-tang-ar37616.htm" title="Thiết kế sáng tạo từ 10 mẫu nhà mái Thái 2 tầng">Thiết kế sáng tạo từ 10 mẫu nhà mái Thái 2 tầng</a></li>
+                     </ul>
+                     <div class="clear"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="clear"></div>
+         <div class="home-enews">
+            <a class="btnConfirm fancybox.ajax" id="BannerRegisterArticleEmail">Đăng ký</a>
+            <input name="ctl00$ContentPlaceHolder1$txtHomeEnewsEmail" type="text" id="txtHomeEnewsEmail" placeholder="Nhập địa chỉ email">
+         </div>
+      </div>
+   </div>
+   <!-- End Index Page -->
+   <div class="clear">
+   </div>
+</div>
+<!-- Footer -->
 <style>
-    .footer .menu-bottom ul li a
-    {
-        padding: 11px 7px !important;
-    }
+  .footer .menu-bottom ul li a
+  {
+  padding: 11px 7px !important;
+  }
 </style>
-<div class="footer">
-    <div class="menu-bottom">
-        <ul>
-            <li><a href="/gioi-thieu.htm" rel="nofollow">Giới thiệu</a></li>
-            <li><a href="/huong-dan.htm" rel="nofollow">Hướng dẫn sử dụng</a></li>
-            <li><a href="/quy-dinh.htm" rel="nofollow">Quy định</a></li>
-            <li><a href="/quy-che-hoat-dong.htm" rel="nofollow">Quy chế hoạt động</a></li>
-            <li><a href="/chinh-sach-bao-ve-thong-tin-ca-nhan.htm" rel="nofollow">Bảo vệ thông tin
-                cá nhân</a></li>
-            <li><a href="/bien-phap-va-co-che-giai-quyet-tranh-chap.htm" rel="nofollow">Cơ chế giải
-                quyết tranh chấp</a></li>
-            <li><a href="/lien-he.htm" rel="nofollow">Liên hệ</a></li>
-            
-            <li><a href="/dieu-khoan.htm" rel="nofollow">Điều khoản thỏa thuận</a></li>
-            <li><a href="/bao-gia.htm" rel="nofollow">Báo giá</a></li>
-        </ul>
-        <div class="clear">
-        </div>
-    </div>
-    <div class="footer_bottom">
-        <div class="row_footer">
-            <div class="logo_footer">
-                <a href="/" title="Đô thị">
-                    <%= image_tag "Images/logo.png", alt: "Đô thị" %></a> <a href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=35394" target="_blank" style="text-align: center; display: block" title="Đã đăng ký với Bộ Công Thương" rel="nofollow">
-                        <%= image_tag "Images/logo_register.png", rel: "nofollow", alt: "Đã đăng ký với Bộ Công Thương" %>
-                    </a>
-            </div>
-            <div class="info_footer">
-                <p>
-                    <b>CÔNG TY TNHH DỊCH VỤ TRUYỀN THÔNG ĐÔ THỊ </b>
-                </p>
-                <p>
-                    MSDN: 0313969106 do Sở KH&amp;DT TP. Hồ Chí Minh cấp ngày 17/8/2016.
-                </p>
-                <div class="clear">
-                </div>
-                <p>
-                    <span><b class="first">[A] :</b> Lầu 7, tòa nhà Lutaco Tower, Số 173A Nguyễn Văn Trỗi,
-                        Phường 11, Quận Phú Nhuận, Hồ Chí Minh. </span>
-                </p>
-                <p>
-                    <span><b class="first">[M]:</b> 0903 236 862 - 0969 980 365 - (028) 3 845 3979 </span>
-                </p>
-                <div class="clear">
-                </div>
-                <p>
-                    <a style="border: none; margin: 0; padding: 0" rel="nofollow" href="mailto:cskh@info@dothi.net?Subject=Liên hệ-info@dothi.net" target="_top"><b class="first">[E] :</b> info@dothi.net</a> <a href="skype:cskh.dothinet?chat" rel="nofollow" style="padding-left: 10px">Skype: cskh.dothinet</a>
-                </p>
-                <div class="clear">
-                </div>
-                <p>
-                    <span class="colr"><b class="first">[T] :</b> Thứ 2 đến thứ 6: <strong>8h00 - 17h15</strong>
-                        | Thứ 7: <strong>8h00 - 12h00</strong></span>
-                </p>
-            </div>
-            <div class="app_footer">
-                <p>
-                    Tải ứng dụng di động
-                </p>
-                <p>
-                    <a class="mr10" href="https://play.google.com/store/apps/details?id=net.dothi&amp;hl=vi" rel="nofollow" target="_blank">
-                        <%= image_tag "Images/app-android-dl.png" %>
-                    </a><a href="https://itunes.apple.com/vn/app/dothi-tin-nhanh-bat-dong-san/id1072292211?l=vi&amp;mt=8" rel="nofollow" target="_blank">
-                        <%= image_tag "Images/app-store.png" %>
-                    </a>
-                </p>
-                <p class="copyright">
-                    Copyright DO THI MEDIA
-                </p>
-            </div>
-            <div class="clear">
-            </div>
-            <div class="bd_footer">
-            </div>
-        </div>
-        <div class="share_footer">
-            <span style="float: left;">Phát triển bởi: <a href="http://vgroup.vn" rel="nofollow" title="VGROUP" target="_blank" class="color00ffd1">VGROUP</a></span>
-            <iframe src="//www.facebook.com/plugins/like.php?href=https://www.facebook.com/pages/Dothinet/501286850027197&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border: none; overflow: hidden; height: 21px;
-                float: left; width: 165px; margin-left: 20px;" allowtransparency="true"></iframe>
-            <script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true">
-                { lang: 'vi' }
-            </script>
-            <!-- Đặt thẻ này vào nơi bạn muốn Nút +1 kết xuất. -->
-            <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1527506974753" name="I0_1527506974753" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;size=medium&amp;annotation=inline&amp;width=100&amp;hl=vi&amp;origin=https%3A%2F%2Fdothi.net&amp;url=https%3A%2F%2Fplus.google.com%2Fu%2F2%2F104751964857878543083%2Fposts&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.oKdW7bnNCkA.O%2Fm%3D__features__%2Fam%3DQQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN21chCqe-J_uS07QYyqnqbGguhpg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1527506974753&amp;_gfid=I0_1527506974753&amp;parent=https%3A%2F%2Fdothi.net&amp;pfname=&amp;rpctoken=11484745" data-gapiattached="true" title="G+"></iframe></div>
-            <script type="text/javascript">
-                window.twttr = (function (d, s, id) { var t, js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return } js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } }) } (document, "script", "twitter-wjs"));
-            </script>
-            <span style="float: right;"><a href="http://www.danhgiaxe.com/" target="_blank" title="Bài đánh giá, so sánh, tư vấn mua xe">
-                Đánh giá xe</a> </span>
-        </div>
-    </div>
-    <div class="clear">
-    </div>
-</div>
+<script type="text/javascript">
+  var theForm = document.forms['Form1'];
+  if (!theForm) {
+    theForm = document.Form1;
+  }
+  function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+      theForm.__EVENTTARGET.value = eventTarget;
+      theForm.__EVENTARGUMENT.value = eventArgument;
+      theForm.submit();
+    }
+  }
+</script>
 
-        <div id="boxProductDialog" style="">
-            <div class="lg-backdrop in" id="backdroplogin" style="transition-duration: 150ms;"></div>
-            <div class="productDialog-container">
-                <div class="productDialogHeader">
-                    <h4>Tin đã lưu</h4>
-                    <%= image_tag "Images/productClose.png", class: "productClose" %>
-                    <span onclick="deleteAllNewsDialog();">Xóa tất cả </span>
-                </div>
-                <div class="boxDialogMain">
-                </div>
-            </div>
-        </div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var activePage = $('.nav-menu .active a').attr('href');
+    if (activePage == '/thiet-ke-kien-truc.htm' || activePage == '/khong-gian-song.htm' || activePage == '/phong-thuy.htm') {
+      $('.content-banner').hide();
+      $('.MultiBanner3').show();
+    }
+    else {
+      $('.MultiBanner3').remove();
+    }
+  })
+</script>
+<script type="text/javascript">
+   $("#ButtonActive").click(function () {
+       var url = "/thong-bao-kich-hoat.htm";
+       $('#ButtonActive').attr("href", url);
+       $('#ButtonActive').fancybox({
+           scrolling: 'no',
+           padding: 0,
+           width: 440,
+           fitToView: false,
+           preload: true,
+           closeBtn: false,
+           afterClose: function () {
+               $.fancybox.close();
+           },
+           helpers: {
+               title: null
+           }
+       });
+   });
+   
+   var href = window.location.pathname;
+   var a_return = new Array(); // Danh sách Url được active
+   var AllUrl = new Array(); // arr Url
+   var ElementUrl = $(".nav-menu li a");
+   
+   var arrHref = href.split("/"); // phân tích current url 
+   
+   for (var i = 0; i < ElementUrl.length; i++) {
+       var abc = ElementUrl[i].toString().split("/");
+       if (abc.length > 3) {
+           AllUrl.push(abc[3].replace(".htm", "")); // lấy được arr url
+       }
+   }
+   
+   if (arrHref.length >= 2) {
+       var currentUrl = arrHref[1];
+       for (var i = 0; i < AllUrl.length; i++) {
+           var _index = currentUrl.search(AllUrl[i]); //Duyet chuoi danh sach Url de so sanh voi Current Url
+           if (_index != -1) {
+               a_return.push(AllUrl[i]); //Neu la tap con cua URL thi add vao array 
+           }
+       }
+   }
+   
+   var return_data = "";
+   var return_index = 0;
+   for (x in a_return) {
+    if (a_return[x].length > return_index) {//so sanh do dai lon nhat trung` voi URL thi lay gia tri
+      return_index = a_return[x].length;
+      return_data = a_return[x]; //gia tri can lay (duy nhat 1 gia tri)
+    }
+   }
+   var taga = $('.nav-menu,.dropdown-menu').find('a[href=\'/' + return_data + '.htm\']');
+   
+   if (href == '/rao-vat.htm' || strEndsWith(href, '-rv.htm') || href.indexOf('-prv') > -1) {
+       $(".lv0").removeClass('active');
+       $('#liRaovat').addClass('active');
+   }
+   else if (taga.length > 0) {
+       setActiveClass(taga, 0);
+   }
+   
+   function strEndsWith(str, suffix) {
+       return str.match(suffix + "$") == suffix;
+   }
+   
+   function setActiveClass(tag, interval) {
+   
+    $(".lv0").removeClass('active');
+    tag.addClass('active');
 
-        <div class="productDialogShow">
-            <span class="titleDialog">Tin đã lưu</span>
-            <span style="display: none">
-                <%= image_tag "Images/productClose.png", title: "Xóa tất cả" %></span>
-        </div>
+    if (tag.hasClass('lv0')) {
 
-        <div id="boxProductSaved" style="display: none;">
+       return;
+    }
+    interval++;
+    if (interval <= 4) { // Menu dothi chỉ có 2 cấp, ul > li > ul > li. ra 3 cấp mới set được parrent
+       setActiveClass(tag.parent(), interval);
 
-            <div class="titlebox">
-                <span class="title">Tin đã lưu</span>
-                <span id="deleteAll" title="Xóa tất cả" onclick="deleteAllNews();"></span><span id="btn_close" class="hideAll"></span>
-            </div>
-            <div>
-                <ul class="listbox" style="width: 100%;">
-                </ul>
-            </div>
-        </div>
-        <!-- End Footer -->
-        <div id="SiteLeft" style="">
-            
+    } else {
+    }
+   }
+</script>
+<!-- End Box Search -->
+<script type="text/javascript">
+  $(function () {
+    var cnt = 0;
+    $("#KeyDownEnterHome").keyup(function (event) {
+      if (event.keyCode == 13 && cnt > 0) {
+        cnt = 0;
+        window.__doPostBack('ctl00$ContentPlaceHolder1$BoxSearch1$lbtSearch', '');
+      }
+      else if (event.keyCode == 13) {
+        cnt++;
+      }
+    });
+  });
+  
+  $('#ddlCity').on('change', function () {
+    $("#hddcboCity").val($('#ddlCity').val());
+    $("#hddcboDist").val(-1);
+    $("#hddcboWard").val(-1);
+    $("#hddcboStreet").val(-1);
+    $("#hddcboProject").val(-1);
+    GetDistrict($('#ddlCity').val());
+  });
+  $('#ddlDistrict').on('change', function () {
+      $("#hddcboDist").val($('#ddlDistrict').val());
+      ChangeDistrict($('#ddlDistrict').val());
+  });
+  $('#ddlWard').on('change', function () {
+      $("#hddcboWard").val($('#ddlWard').val());
+      $("#hddWardPrefix").val($('#ddlWard').find('option:selected').attr('wardprefix'));
+      $("#hddcboStreet").val(-1);
+      GetStreets($('#ddlDistrict').val());
+  });
+  $('#ddlStreets').on('change', function () {
+      $("#hddcboStreet").val($('#ddlStreets').val());
+      $('#hddStreetPrefix').val($('#ddlStreets').find('option:selected').attr('streetprefix'));
+  });
+  $('#ddlProjects').on('change', function () {
+      $("#hddcboProject").val($('#ddlProjects').val());
+      var wardId = $('#ddlProjects option:selected').attr('wardid');
+      if (wardId > 0) {
+          $('#select2-ddlWard-container').html($('#ddlWard option[value="' + wardId + '"]').html());
+          $('#ddlWard').val(wardId);
+          $("#hddcboWard").val(wardId);
+      }
+  });
+  $('select').select2({
+    matcher: function (params, data) {
+      if ($.trim(params.term) === '') {
+        return data;
+      }
+      var _keyword = UnicodeToKoDau(data.text.toLowerCase());
+      var _text = UnicodeToKoDau(params.term.toLowerCase());
+      if (_keyword.indexOf(_text) == 0) {
+        var modifiedData = $.extend({}, data, true);
+        modifiedData.text;
+        return modifiedData;
+      }
+      return null;
+    }
+  });
+  
+</script>
+<script type="text/javascript">
+  $(function () {
+    var i = 0;
+    var len = 5;
+    var first = true;
+    var o = $(".news-default-right").jCarouselLite({
+      vertical: true,
+      hoverPause: false,
+      visible: 5,
+      start: 0,
+      warp: "circle",
+      auto: 1,
+      speed: 1000,
+      beforeStart: function (a) {
+        if (!first)
+          $(a).parent().delay(1000);
+      },
+      afterEnd: function (a) {
+        if (first) {
+            first = false;
+        }
 
-<div class="ban_scroll" id="ban_left" style="width: 100px; display: none;">
-    <div class="item" id="locationA1">
+        $(".news-default-left").css("display", "none");
+        $("#hothome_" + (len - i)).css("display", "block");
 
-        
-                <a id="ban_l67" href="/banner-click-67.htm?url=https://dothi.net/ban-can-ho-chung-cu-duong-song-hanh-phuong-an-phu/mo-ban-block-6-8can-ho-gem-riverside-quan-2-36-trieum-uu-dai-goi-50-trieu-lh-0903205141-pr11047421.htm" rel="nofollow" target="_blank" style="width: 100px">
-                    <%= image_tag "https://img.dothi.net/2018/05/18/20180518112717-6762.gif", alt: "banner dọc trái + phải trang chủ _ LuyenVT1" %>
-                </a>
-            
-    </div>
-    <div class="item" id="locationA2">
-        
-                <a id="ban_l21" href="/banner-click-21.htm?url=https://file.dothi.net/tuyen-dung/thong-bao-tuyen-dung.aspx" rel="nofollow" target="_blank" style="width: 100px; display: inline;">
-                    <%= image_tag "https://img.dothi.net/2018/05/04/20180504141622-f464.gif", alt: "banner tuyen dung " %>
-                </a>
-            
-                <a id="ban_l16" href="/banner-click-16.htm?url=https://topbank.vn/tu-van/lai-suat-vay-mua-nha-2018-tai-cac-ngan-hang-uy-tin-nhat-np20180226182051560" rel="nofollow" target="_blank" style="width: 100px; display: none;">
-                    <%= image_tag "https://img.dothi.net/2018/03/08/20180308090429-90af.gif", alt: "banner top bank" %>
-                </a>
-            
-    </div>
-</div>
-
-        </div>
-        <div id="SiteRight" style="">
-            
-<div class="ban_scroll" id="ban_right" style="width: 100px; display: none;">
-    <div class="item" id="locationB1">
-
-        
-                <a id="ban_l67" href="/banner-click-67.htm?url=https://dothi.net/ban-can-ho-chung-cu-duong-song-hanh-phuong-an-phu/mo-ban-block-6-8can-ho-gem-riverside-quan-2-36-trieum-uu-dai-goi-50-trieu-lh-0903205141-pr11047421.htm" rel="nofollow" target="_blank" style="width: 100px">
-                    <%= image_tag "https://img.dothi.net/2018/05/18/20180518112717-6762.gif", alt: "banner dọc trái + phải trang chủ _ LuyenVT1" %>
-                </a>
-            
-    </div>
-    <div class="item" id="locationB2">
-        
-                <a id="ban_l16" href="/banner-click-16.htm?url=https://topbank.vn/tu-van/lai-suat-vay-mua-nha-2018-tai-cac-ngan-hang-uy-tin-nhat-np20180226182051560" rel="nofollow" target="_blank" style="width: 100px">
-                    <%= image_tag "https://img.dothi.net/2018/03/08/20180308090429-90af.gif", alt: "banner top bank" %>
-                </a>
-            
-    </div>
-</div>
-
-        </div>
-    </form>
-
-
-<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 101; top: 0px; left: 0px; display: none;"></ul><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.ef2c8913b9245291df4f0101c0de2cf8.html?origin=https%3A%2F%2Fdothi.net&amp;settingsEndpoint=https%3A%2F%2Fsyndication.twitter.com%2Fsettings" title="Twitter settings iframe" style="display: none;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/oVjM2wVZ10b.js?version=42#channel=f202f9a51f73ecc&amp;origin=https%3A%2F%2Fdothi.net" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><iframe name="oauth2relay268157251" id="oauth2relay268157251" src="https://accounts.google.com/o/oauth2/postmessageRelay?parent=https%3A%2F%2Fdothi.net&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.oKdW7bnNCkA.O%2Fm%3D__features__%2Fam%3DQQE%2Frt%3Dj%2Fd%3D1%2Frs%3DAGLTcCN21chCqe-J_uS07QYyqnqbGguhpg#rpctoken=236497255&amp;forcesecure=1" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe>
+        i++;
+        if (i > len) i = 0;
+      }
+    });
+  });
+</script>

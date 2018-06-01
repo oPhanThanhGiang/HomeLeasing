@@ -1,0 +1,10 @@
+id,name,key_name,sort
+1,Bán căn hộ chung cư,sell_​​apartments,10
+2,Bán nhà riêng,sell_​​your_house,20
+3,"Bán nhà biệt thự, liền kề",sell_​​villas_adjacent,30
+4,Bán nhà mặt phố,sell_​​house_street_side,40
+5,Bán đất nền dự án,sale_land_for_the_project,50
+6,Bán đất,land_sales,60
+7,"Bán trang trại, khu nghỉ dưỡng",selling_farm_resort,70
+8,"Bán kho, nhà xưởng","warehouse,_workshop",80
+9,Bán loại bất động sản khác,sell_​​other_real_estate,90

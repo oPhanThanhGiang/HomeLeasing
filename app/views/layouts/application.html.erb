@@ -8,8 +8,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-
   <body>
+    <%= render partial: "layouts/header" %>
     <%= yield %>
+    <%= render partial: "layouts/footer" %>
   </body>
 </html>

@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180505075922) do
+ActiveRecord::Schema.define(version: 20180601113211) do
 
-  create_table "images", force: :cascade do |t|
+  create_table "images", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "imageablem_type"
-    t.integer "imageablem_id"
+    t.bigint "imageablem_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["imageablem_type", "imageablem_id"], name: "index_images_on_imageablem_type_and_imageablem_id"
   end
 
-  create_table "m_cities", force: :cascade do |t|
+  create_table "m_cities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_direction_of_balconies", force: :cascade do |t|
+  create_table "m_direction_of_balconies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_direction_of_houses", force: :cascade do |t|
+  create_table "m_direction_of_houses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_districts", force: :cascade do |t|
+  create_table "m_districts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_interiors", force: :cascade do |t|
+  create_table "m_interiors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_paper_types", force: :cascade do |t|
+  create_table "m_paper_types", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_streets", force: :cascade do |t|
+  create_table "m_streets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -76,7 +76,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_type_of_informations", force: :cascade do |t|
+  create_table "m_type_of_informations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_type_of_lands", force: :cascade do |t|
+  create_table "m_type_of_lands", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -92,7 +92,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_type_of_news", force: :cascade do |t|
+  create_table "m_type_of_news", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -100,7 +100,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_units", force: :cascade do |t|
+  create_table "m_units", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -108,7 +108,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "m_wards", force: :cascade do |t|
+  create_table "m_wards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.string "key_name"
     t.integer "sort"
@@ -116,18 +116,18 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "news", force: :cascade do |t|
-    t.integer "type_of_information_id"
-    t.integer "type_of_land_id"
-    t.integer "unit_id"
-    t.integer "city_id"
-    t.integer "district_id"
-    t.integer "ward_id"
-    t.integer "street_id"
-    t.integer "direction_of_house_id"
-    t.integer "direction_of_balcony_id"
-    t.integer "interior_id"
-    t.integer "type_of_new_id"
+  create_table "news", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.bigint "type_of_information_id"
+    t.bigint "type_of_land_id"
+    t.bigint "unit_id"
+    t.bigint "city_id"
+    t.bigint "district_id"
+    t.bigint "ward_id"
+    t.bigint "street_id"
+    t.bigint "direction_of_house_id"
+    t.bigint "direction_of_balcony_id"
+    t.bigint "interior_id"
+    t.bigint "type_of_new_id"
     t.string "price"
     t.string "area"
     t.text "address"
@@ -146,7 +146,8 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.string "security_code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
+    t.bigint "user_id"
+    t.integer "type"
     t.index ["city_id"], name: "index_news_on_city_id"
     t.index ["direction_of_balcony_id"], name: "index_news_on_direction_of_balcony_id"
     t.index ["direction_of_house_id"], name: "index_news_on_direction_of_house_id"
@@ -161,10 +162,10 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.index ["ward_id"], name: "index_news_on_ward_id"
   end
 
-  create_table "news_papers", force: :cascade do |t|
+  create_table "news_papers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text "title"
-    t.integer "user_id"
-    t.integer "m_paper_type_id"
+    t.bigint "user_id"
+    t.bigint "m_paper_type_id"
     t.text "content"
     t.integer "sort"
     t.datetime "created_at", null: false
@@ -173,7 +174,7 @@ ActiveRecord::Schema.define(version: 20180505075922) do
     t.index ["user_id"], name: "index_news_papers_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
     t.text "info"
     t.integer "phone"

@@ -9,4 +9,6 @@ class New < ApplicationRecord
   belongs_to :interior, class_name: M::Interior
   belongs_to :type_of_new, class_name: M::TypeOfNew
   belongs_to :user, class_name: User
+
+  enum type: [:real, :sale]
 end
